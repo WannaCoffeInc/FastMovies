@@ -1,3 +1,45 @@
+/*Destaques grid*/
+
+.grid_container {
+  display: grid;
+  height: 100%;
+  grid-template-areas: "poster_destaque trailer_destaque";
+  grid-template-columns: 25% 4fr;
+  grid-template-rows: 100%;
+  margin: 20px;
+}
+
+.grid_container > div {
+  border: 1px dashed #888;
+  border-radius: .4em;
+}
+
+.poster_destaque{
+    grid-area: poster_destaque;
+    position: relative;
+    background-image: url('../moviePosters/d58677de7d7f64d820bfa646a78d95df.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-height: 100%;
+}
+
+.trailer_destaque{
+    grid-area: trailer_destaque;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 56.25% /* 9 / 16 * 100% */
+}
+
+.embed_trailer{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /*resCarousel Css*/
 
 .outt {
