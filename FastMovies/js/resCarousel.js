@@ -202,3 +202,11 @@ function resCarouselAnimator(parent, direction, start, end, speed, length) {
         parent.find(".item").attr("style", "");
     }, speed - 70);
 }
+
+//Controlar os collapses, quando abre um fecha outro.
+$(document).click(function(e) {
+	if (!$(e.target).is('.collapse multi-collapse')) {
+        $('.collapse').collapse('hide');
+
+    }
+});
