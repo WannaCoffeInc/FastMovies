@@ -7,6 +7,9 @@ Primeira estrutura de carrossel + colapse
 
 - Bugs a serem resolvidos: 
   1. Ao expandir o collapse, a página não está rolando para o final a fim de promover a visualização do card.
-  2. Ao expandir um collapse e depois clicar em outro poster para expandir o próximo, esse próximo não está sendo exibido enquanto
+  2. O tempo de transição para a expansão do card está ocorrendo um pouco rápido demais, talvez seja melhor uma transição mais suave.
+  3. Ao expandir um collapse e depois clicar em outro poster para expandir o próximo, esse próximo não está sendo exibido enquanto
   o usuário não fechar o collapse que foi aberto anteriormente, clicando novamente no + do poster anterior.
 
+- Implementar:
+  1. função js que atualiza a posição do triângulo do collapse que indica qual o poster selecionado.
