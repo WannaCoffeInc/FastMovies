@@ -1,23 +1,25 @@
 //resCarousel
-$(document).ready(function() { ResCarouselOnInit(); });
+$(document).ready(function () {
+    ResCarouselOnInit();
+});
 
-$(window).resize(function() {
+$(window).resize(function () {
     var r = new Date();
-    setTimeout(function() {
+    setTimeout(function () {
         ResCarouselResize(r);
     }, 200);
 });
 
 function ResCarouselOnInit() {
     ResCarouselSize();
-    $(document).on('click', '.leftRs, .rightRs', function() {
+    $(document).on('click', '.leftRs, .rightRs', function () {
         ResCarousel(this);
     });
-    $(document).on("mouseenter", ".ResHover", function() {
+    $(document).on("mouseenter", ".ResHover", function () {
         $(this).addClass("ResHovered");
     });
 
-    $(document).on("mouseleave", ".ResHover", function() {
+    $(document).on("mouseleave", ".ResHover", function () {
         $(this).removeClass("ResHovered");
     });
 }
@@ -26,7 +28,7 @@ function ResCarouselOnInit() {
 function ResCarouselSlide(e) {
     var thiss = $(e).find(".rightRs");
     var dataInterval = $(e).attr('data-interval');
-    !isNaN(dataInterval) && $(e).addClass("ResHover") && setInterval(function() {
+    !isNaN(dataInterval) && $(e).addClass("ResHover") && setInterval(function () {
         !(thiss.parent().hasClass("ResHovered")) && ResCarousel(thiss);
     }, +(dataInterval));
 }
@@ -35,7 +37,7 @@ function ResCarouselResize() {
     function myfunction() {
         console.log("resize Works");
         //var r = $('body').width();
-        $('.resCarousel').each(function() {
+        $('.resCarousel').each(function () {
             var divValue = $(this).attr('data-value');
             var itemWidth = $(this).find('.item').width();
             $(this).find(".resCarousel-inner").scrollLeft(divValue * itemWidth);
@@ -56,7 +58,7 @@ function ResCarouselSize() {
     var t0 = performance.now();
 
     //    styleCollector0 = styleCollector1 = styleCollector2 = styleCollector3 = "";
-    $('.resCarousel').each(function(index) {
+    $('.resCarousel').each(function (index) {
         var itemsSplit = $(this).attr("data-items").split('-');
         $(this).addClass("ResSlid" + index);
 
@@ -160,7 +162,9 @@ function ResCarousel(Btn) {
         //console.log((itemLenght - itemLoad) + " ," + (currentSlide + dataItm) + " ," + (itemLenght - dataItm));
         (itemLenght - itemLoad) <= (currentSlide + dataItm) && ResCarouselLoad1(itemsDiv);
     }
-    itemsDiv.animate({ scrollLeft: translateXval }, itemSpeed);
+    itemsDiv.animate({
+        scrollLeft: translateXval
+    }, itemSpeed);
     parent.attr("data-value", currentSlide);
 
     //var t1 = performance.now();
@@ -198,15 +202,23 @@ function resCarouselAnimator(parent, direction, start, end, speed, length) {
         //console.log(parent.find(".item").eq(i).find("h1").text());
         parent.find(".item").eq(i).css("transform", "translateX(" + val + "px)");
     }
-    setTimeout(function() {
+    setTimeout(function () {
         parent.find(".item").attr("style", "");
     }, speed - 70);
 }
 
 //Controlar os collapses, quando abre um fecha outro.
-$(document).click(function(e) {
+/* $(document).click(function(e) {
 	if (!$(e.target).is('.collapse multi-collapse')) {
         $('.collapse').collapse('hide');
 
     }
+}); */
+
+$(document).ready(function (e) {
+    $(".collapse").on('show.bs.collapse', function () {
+        if (!$(e.target).is('.collapse multi-collapse')) {
+            $('.collapse').collapse('hide');
+        }
+    });
 });
