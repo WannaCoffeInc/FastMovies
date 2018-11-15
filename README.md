@@ -12,4 +12,4 @@ Primeira estrutura de carrossel + colapse
   o usuário não fechar o collapse que foi aberto anteriormente, clicando novamente no + do poster anterior.
 
 - Implementar:
-  [FEITO] 1. função js que atualiza a posição do triângulo do collapse que indica qual o poster selecionado.
+  1. função js que atualiza a posição do triângulo do collapse que indica qual o poster selecionado. [FEITO]
