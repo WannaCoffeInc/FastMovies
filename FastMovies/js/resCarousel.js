@@ -215,8 +215,6 @@ function resCarouselAnimator(parent, direction, start, end, speed, length) {
     }
 }); */
 
-var collap=null;
-
 $(document).ready(function (e) {
     $(".collapse").on('show.bs.collapse', function () {//Executa coisas quando vai abrir o collapse
         var posx = $(".collapse").position().top
