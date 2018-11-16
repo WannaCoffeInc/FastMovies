@@ -215,10 +215,38 @@ function resCarouselAnimator(parent, direction, start, end, speed, length) {
     }
 }); */
 
+var collap=null;
+
 $(document).ready(function (e) {
-    $(".collapse").on('show.bs.collapse', function () {
+    $(".collapse").on('show.bs.collapse', function () {//Executa coisas quando vai abrir o collapse
+        var posx = $(".collapse").position().top
         if (!$(e.target).is('.collapse multi-collapse')) {
-            $('.collapse').collapse('hide');
+            $('.collapse').collapse('hide')
         }
     });
+    $(".collapse").on('hide.bs.collapse', function () {//Executa coisas quando vai fechar o collapse
+        //$('.triangulo').css('display', 'none');//Esconder os triangulos abertos
+
+    });
+
+
 });
+
+
+$('.information').click(function(){
+    var ele = $(this).parent().parent().parent().parent().find('.triangulo')
+    if(ele.css('display') == "none"){
+        $('.triangulo').css('display', 'none')//Esconder os triangulos abertos
+        ele.css('display', 'block');//Mostra o triangulo selecionado
+    }else{
+        $('.triangulo').css('display', 'none')//Esconder os triangulos abertos
+    }
+});
+
+//Debuga o que diabos eu to clicando meu odin
+/*
+$(document).click(function(e) {
+    teste = $(e.target)
+    alert(teste.html())
+});
+*/
