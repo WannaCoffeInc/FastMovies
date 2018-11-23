@@ -55,7 +55,7 @@
     opacity: 1;
 }
 
-.poster_destaque:hover #information{
+.poster_destaque:hover .information{
     display:table;
     margin:0 auto;
     padding-top: 70px;
@@ -140,7 +140,7 @@
     background: rgba(0, 0, 1, 0.6);
 }
 
-span#movie_title, a#information{
+span#movie_title, a.information{
     display: none;
 }
 
@@ -152,7 +152,7 @@ span#movie_title, a#information{
     font-size: 12pt;
 }
 
-.item:hover #information{
+.item:hover .information{
     display: block;
     padding-top: 70px;
     vertical-align: middle;
@@ -160,22 +160,16 @@ span#movie_title, a#information{
     font-size: 12pt;
 }
 
-.card{
-    margin-top: 10px;
-    height: 500px;
+.triangulo {
     position: relative;
-    border-radius: .4em;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-    padding-top: 20px;
-    padding-left: 2.5%;
-    width: 100%;
+    display: none;
 }
-
-.card:after { /*Trianguluzinho que aparece com collapse*/
+.triangulo:after { /*Trianguluzinho que aparece com collapse*/
     content: '';
+    float: bottom;
     position: absolute;
-    top: 0;
-    left: 30%; /*controla o quão a direita está o triangulo - controlar isso com js*/
+    bottom: 0px;
+    left: 50%;
     width: 0;
     height: 0;
     border: 19px solid transparent;
@@ -183,6 +177,18 @@ span#movie_title, a#information{
     border-top: 0;
     margin-left: -19px;
     margin-top: -19px;
+    display: block;
+}
+
+
+.card{
+    height: 500px;
+    position: relative;
+    border-radius: .4em;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    padding-top: 20px;
+    padding-left: 2.5%;
+    width: 100%;
 }
 
 .itemSinopse{
