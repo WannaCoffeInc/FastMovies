@@ -10,8 +10,8 @@
 }
 
 .grid_container > div {
-  border: 1px dashed #888;
-  border-radius: .4em;
+  border: 1px ;/*dashed #888;*/
+/*  border-radius: .4em;*/
 
 }
 
@@ -353,6 +353,51 @@ a.trailer{
 
 .banner {
     overflow: hidden !important;
+}
+
+
+.nav{
+/*    background-color: rgba(51,0,51,.8);
+*/    position: absolute;
+    display: block;
+    margin: auto;
+    width: 595px;
+    max-width: 100%;
+    text-align: center;
+    top: 20px;
+    left: 2.5%;
+    right: 2.5%;
+    transform: (-2.5%, -2.5%);
+}
+
+.nav > li{
+    border: 1px solid #888;
+    color: white;
+}
+
+.hour{
+    color: white;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+    background-color: rgba(51,0,51,1);
+}
+
+.nav-tabs>li>a:hover{
+    background-color: rgba(51,0,51,1);
+}
+
+.horarios{
+/*    background-color: rgba(51,0,51,.8);
+*/    position: absolute;
+    display: block;
+    margin: auto;
+    margin-top: 105px;
+    width: 595px;
+    max-width: 100%;
+    left: 2.5%;
+    right: 2.5%;
+    transform: (-2.5%, -2.5%);
 }
 
 /*tile css*/
