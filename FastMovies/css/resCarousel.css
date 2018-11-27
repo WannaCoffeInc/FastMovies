@@ -10,18 +10,57 @@
 }
 
 .grid_container > div {
-  border: 1px dashed #888;
-  border-radius: .4em;
+  border: 1px ;/*dashed #888;*/
+/*  border-radius: .4em;*/
+
 }
 
 .poster_destaque{
     grid-area: poster_destaque;
     position: relative;
-    background-image: url('../moviePosters/d58677de7d7f64d820bfa646a78d95df.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     max-height: 100%;
+}
+
+.poster_destaque > img{
+    max-width: 100%;
+    max-height: 100%;
+    height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0,0,1,0.7);
+  z-index: 0;
+}
+
+.poster_destaque:hover .overlay{
+  opacity: 1;
+}
+
+.poster_destaque:hover #movie_title{
+    display:table;
+    margin:0 auto;    
+    padding-top: 70px;
+    vertical-align: top;    
+    color: white;
+    font-size: 17pt;
+    opacity: 1;
+}
+
+.poster_destaque:hover .information{
+    display:table;
+    margin:0 auto;
+    padding-top: 70px;
+    color: white;
+    font-size: 17pt;
 }
 
 .trailer_destaque{
@@ -78,7 +117,6 @@
     width: 100%;
     position: relative;
     border-radius: .4em;
-
 }
 
 .resCarousel-inner {
@@ -86,7 +124,8 @@
     white-space: nowrap;
     font-size: 0;
     vertical-align: top;
-    border-radius: .4em;
+    border-radius: .4em; 
+
 }
 
 .resCarousel-inner .item {
@@ -101,7 +140,7 @@
     background: rgba(0, 0, 1, 0.6);
 }
 
-span#movie_title, a#information{
+span#movie_title, a.information{
     display: none;
 }
 
@@ -113,7 +152,7 @@ span#movie_title, a#information{
     font-size: 12pt;
 }
 
-.item:hover #information{
+.item:hover .information{
     display: block;
     padding-top: 70px;
     vertical-align: middle;
@@ -121,22 +160,16 @@ span#movie_title, a#information{
     font-size: 12pt;
 }
 
-.card{
-    margin-top: 10px;
-    height: 500px;
+.triangulo {
     position: relative;
-    border-radius: .4em;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-    padding-top: 20px;
-    padding-left: 2.5%;
-    width: 100%;
+    display: none;
 }
-
-.card:after { /*Trianguluzinho que aparece com collapse*/
+.triangulo:after { /*Trianguluzinho que aparece com collapse*/
     content: '';
+    float: bottom;
     position: absolute;
-    top: 0;
-    left: 30%; /*controla o quão a direita está o triangulo - controlar isso com js*/
+    bottom: 0px;
+    left: 50%;
     width: 0;
     height: 0;
     border: 19px solid transparent;
@@ -144,6 +177,18 @@ span#movie_title, a#information{
     border-top: 0;
     margin-left: -19px;
     margin-top: -19px;
+    display: block;
+}
+
+
+.card{
+    height: 500px;
+    position: relative;
+    border-radius: .4em;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    padding-top: 20px;
+    padding-left: 2.5%;
+    width: 100%;
 }
 
 .itemSinopse{
@@ -308,8 +353,66 @@ a.trailer{
 
 .banner {
     overflow: hidden !important;
-
 }
+
+
+.nav{
+/*    background-color: rgba(51,0,51,.8);
+*/    position: absolute;
+    display: block;
+    margin: auto;
+    width: 595px;
+    max-width: 100%;
+    text-align: center;
+    top: 20px;
+    left: 2.5%;
+    right: 2.5%;
+    transform: (-2.5%, -2.5%);
+}
+
+.nav > li{
+    border: 1px solid #888;
+    color: white;
+}
+
+.hour{
+    color: white;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+    background-color: rgba(51,0,51,1);
+}
+
+.nav-tabs>li>a:hover{
+    background-color: rgba(51,0,51,1);
+}
+
+.horarios{
+/*    background-color: rgba(51,0,51,.8);*/    
+    position: absolute;
+    display: block;
+    margin: auto;
+    margin-top: 105px;
+    width: 595px;
+    max-width: 100%;
+    left: 2.5%;
+    right: 2.5%;
+    transform: (-2.5%, -2.5%);
+}
+
+.label {
+    color: white;
+    padding: 7px;
+    font-family: Arial;
+    border-radius: .4em;
+    font-size: 10pt; 
+}
+
+.dublado {background-color: #4CAF50;} /* Green */
+.legendado {background-color: #2196F3;} /* Blue */
+.f2D {background-color: #ff9800;} /* Orange */
+.f3D {background-color: #f44336;} /* Red */ 
+.f4K {background-color: #e7e7e7; color: black;} /* Gray */ 
 
 /*tile css*/
 
