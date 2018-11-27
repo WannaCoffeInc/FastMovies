@@ -388,8 +388,8 @@ a.trailer{
 }
 
 .horarios{
-/*    background-color: rgba(51,0,51,.8);
-*/    position: absolute;
+/*    background-color: rgba(51,0,51,.8);*/    
+    position: absolute;
     display: block;
     margin: auto;
     margin-top: 105px;
@@ -399,6 +399,20 @@ a.trailer{
     right: 2.5%;
     transform: (-2.5%, -2.5%);
 }
+
+.label {
+    color: white;
+    padding: 7px;
+    font-family: Arial;
+    border-radius: .4em;
+    font-size: 10pt; 
+}
+
+.dublado {background-color: #4CAF50;} /* Green */
+.legendado {background-color: #2196F3;} /* Blue */
+.f2D {background-color: #ff9800;} /* Orange */
+.f3D {background-color: #f44336;} /* Red */ 
+.f4K {background-color: #e7e7e7; color: black;} /* Gray */ 
 
 /*tile css*/
 
