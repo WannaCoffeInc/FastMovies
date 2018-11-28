@@ -14,9 +14,19 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">  
 
     <style>
-    body {
-        font-family: 'Trirong', serif;
-        background: #eee;
+    body { 
+
+        /*https://www.cssmatic.com/gradient-generator#'\-moz\-linear\-gradient\%28top\%2C\%20rgba\%28102\%2C1\%2C84\%2C1\%29\%200\%25\%2C\%20rgba\%28128\%2C2\%2C103\%2C1\%29\%200\%25\%2C\%20rgba\%28245\%2C131\%2C10\%2C1\%29\%2087\%25\%2C\%20rgba\%28235\%2C192\%2C0\%2C1\%29\%20100\%25\%29\%3B'*/
+        /*https://cssgradient.io/*/
+
+    font-family: 'Trirong', serif;
+    background: rgba(102,1,84,1);
+    background: -moz-linear-gradient(top, rgba(102,1,84,1) 0%, rgba(128,2,103,1) 0%, rgba(245,131,10,1) 87%, rgba(235,192,0,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(102,1,84,1)), color-stop(0%, rgba(128,2,103,1)), color-stop(87%, rgba(245,131,10,1)), color-stop(100%, rgba(235,192,0,1)));
+    background: -webkit-linear-gradient(top, rgba(102,1,84,1) 0%, rgba(128,2,103,1) 0%, rgba(245,131,10,1) 87%, rgba(235,192,0,1) 100%);
+    background: -o-linear-gradient(top, rgba(102,1,84,1) 0%, rgba(128,2,103,1) 0%, rgba(245,131,10,1) 87%, rgba(235,192,0,1) 100%);
+    background: -ms-linear-gradient(top, rgba(102,1,84,1) 0%, rgba(128,2,103,1) 0%, rgba(245,131,10,1) 87%, rgba(235,192,0,1) 100%);
+
     }
 
     .p0 {
@@ -139,6 +149,32 @@
 </div>
 </div> -->
 
+<!--     <header>
+        <h1>Header Content</h1>
+    </header>
+    <br> -->
+
+<nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Transparent to Solid Nav</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Another Link</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
 <!--Destaques-->
 <div class="grid_container">
     <div class="poster_destaque">
@@ -161,9 +197,9 @@
 
 <!--home-->
 <div class="container p8">
-    <!-- <h4>data-items="2-3-4-5" data-slide="5" data-speed="900" data-interval="4000" data-load="3" data-animator="lazy"</h4> -->
+    <!-- <h4>data-items="2-3-4-5" data-slide="5" data-speed="900" data-interval="4000" data-load="3" data-animator="lazy"</h4> -->    
 
-<!-- ************************************** IN√çCIO CARROSSEL "EM CARTAZ" ************************************** -->
+<!-- ************************************** INÕCIO CARROSSEL "EM CARTAZ" ************************************** -->
     <div class="resCarousel" data-items="2-3-4-5" data-slide="2" data-speed="900">
         <div class="resCarousel-inner" id="eventLoad">
 
@@ -199,7 +235,7 @@
                 <div class="tile" style="background: url('moviePosters/PePequeno.jpg') center center no-repeat; background-size: 100% 100%; object-fit: contain;">
                     <div>
                         <span id = "movie_title">
-                            P√© Pequeno
+                            PÈ Pequeno
                             <a class = "information" data-toggle="collapse" href="#collapseExample3" role="button">
                                 <i class="fas fa-plus-circle fa-3x" style="color: yellow;"></i>
                             </a>
@@ -307,21 +343,21 @@
                 <div class="triangulo"></div>
             </div>
         </div>
-        <button class='btn btn-default leftRs'></button>
-        <button class='btn btn-default rightRs'></button>
+        <button class='btn btn-default leftRs'><span class="glyphicon glyphicon-chevron-left"></span></button>
+        <button class='btn btn-default rightRs'><span class="glyphicon glyphicon-chevron-right"></span></button>
     </div>
 <!-- ************************************** FIM CARROSSEL "EM CARTAZ" ************************************** -->
 
-<!-- ************************************** IN√çCIO COLLAPSES DO CARROSSEL "EM CARTAZ" ********************** -->
+<!-- ************************************** INÕCIO COLLAPSES DO CARROSSEL "EM CARTAZ" ********************** -->
 
-    <!-- ********** IN√çCIO COLLAPSE 1 ********** -->
+    <!-- ********** INÕCIO COLLAPSE 1 ********** -->
     <div class="collapse multi-collapse" id="collapseExample1">
         <div class="card card-body movie_poster" style="background: url('moviePosters/0bdad8a01055d795d2cf0e275cf41751.png') top no-repeat; background-size: 100% auto; object-fit: contain;">
             <div class="itemSinopse col-md-6">
                 <p id="title">O GRINCH</p>
-                <p id="info">Anima√ß√£o | Com√©dia</p>
+                <p id="info">AnimaÁ„o | ComÈdia</p>
                 <p id="info_title">Sinopse</p>
-                <p id="info_sinop">O Grinch √© um ser verde que n√£o suporta o Natal e, todo ano, precisa aturar que os habitantes da cidade vizinha de Queml√¢ndia comemoram a data. Decidido a acabar com a festa, ele resolve invadir os lares dos vizinhos e roubar tudo o que est√° relacionado ao Natal.</p>
+                <p id="info_sinop">O Grinch È um ser verde que n„o suporta o Natal e, todo ano, precisa aturar que os habitantes da cidade vizinha de Queml‚ndia comemoram a data. Decidido a acabar com a festa, ele resolve invadir os lares dos vizinhos e roubar tudo o que est· relacionado ao Natal.</p>
                 <img class="icon yt_icon" src="css/yt_icon.png">
                 <a class="trailer" href="#">Trailer</a>
                 <div class = "circle imdb_score">5.0</div>
@@ -356,7 +392,7 @@
                         <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span>&emsp; 19:50 &emsp; 22:00</font></p>
                     </div>
                     <div id="menu2" class="tab-pane fade">
-                        <h3><font color="#ffffff">Ter√ßa</font></h3>
+                        <h3><font color="#ffffff">TerÁa</font></h3>
                         <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
                         <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span>&emsp;18:40 &emsp; 21:10</font></p><br>
                         <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
@@ -384,14 +420,14 @@
                         <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp;21:50 &emsp; 22:30</font></p>
                     </div>
                     <div id="menu6" class="tab-pane fade">
-                        <h3><font color="#ffffff">S√°bado</font></h3>
+                        <h3><font color="#ffffff">S·bado</font></h3>
                         <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
                         <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span> &emsp; 13:40 &emsp; 16:10 &emsp; 18:40</font></p><br>
                         <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
                         <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp; 21:50 &emsp; 22:30</font></p>
                     </div>
                     <div id="menu7" class="tab-pane fade">
-                        <h3><font color="#ffffff">S√°bado</font></h3>
+                        <h3><font color="#ffffff">S·bado</font></h3>
                         <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
                         <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span> &emsp; 13:40 &emsp; 16:10 &emsp; 18:40</font></p><br>
                         <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
@@ -403,14 +439,14 @@
     </div>
     <!-- ********** FIM COLLAPSE 1 ********** -->
 
-    <!-- ********** IN√çCIO COLLAPSE 2 ********** -->
+    <!-- ********** INÕCIO COLLAPSE 2 ********** -->
     <div class="collapse multi-collapse" id="collapseExample2">
         <div class="card card-body movie_poster" style="background: url('moviePosters/the-nutcracker-and-the-four-realms-2018-5k-poster-xw.jpg') center no-repeat; background-size: 100% auto; object-fit: contain;">
             <div class="itemSinopse col-md-6">
                 <p id="title">O QUEBRA-NOZES E OS QUATRO REINOS</p>
                 <p id="info" style="top: 90px;">Fantasia | Aventura</p>
                 <p id="info_title">Sinopse</p>
-                <p id="info_sinop">Clara perde a √∫nica chave m√°gica para abrir um item de valor incalcul√°vel e inicia uma jornada de resgate aos Quatro reinos.</p>
+                <p id="info_sinop">Clara perde a ˙nica chave m·gica para abrir um item de valor incalcul·vel e inicia uma jornada de resgate aos Quatro reinos.</p>
                 <img class="icon yt_icon" src="css/yt_icon.png">
                 <a class="trailer" href="#">Trailer</a>
                 <div class = "circle imdb_score">5.6</div>
@@ -445,7 +481,7 @@
                         <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span>&emsp; 19:50 &emsp; 22:00</font></p>
                     </div>
                     <div id="menu9" class="tab-pane fade">
-                        <h3><font color="#ffffff">Ter√ßa</font></h3>                       
+                        <h3><font color="#ffffff">TerÁa</font></h3>                       
                         <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
                         <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span>&emsp;18:40 &emsp; 21:10</font></p><br>
                         <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
@@ -474,14 +510,14 @@
                         <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp;21:50 &emsp; 22:30</font></p>
                     </div>
                     <div id="menu13" class="tab-pane fade">
-                        <h3><font color="#ffffff">S√°bado</font></h3>
+                        <h3><font color="#ffffff">S·bado</font></h3>
                         <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
                         <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span> &emsp; 13:40 &emsp; 16:10 &emsp; 18:40</font></p><br>
                         <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
                         <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp; 21:50 &emsp; 22:30</font></p>
                     </div>
                     <div id="menu14" class="tab-pane fade">
-                        <h3><font color="#ffffff">S√°bado</font></h3>
+                        <h3><font color="#ffffff">S·bado</font></h3>
                         <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
                         <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span> &emsp; 13:40 &emsp; 16:10 &emsp; 18:40</font></p><br>
                         <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
@@ -493,14 +529,14 @@
     </div>   
     <!-- ********** FIM COLLAPSE 2 ********** -->
 
-    <!-- ********** IN√çCIO COLLAPSE 3 ********** -->
+    <!-- ********** INÕCIO COLLAPSE 3 ********** -->
     <div class="collapse multi-collapse" id="collapseExample3">
-        <div class="card card-body movie_poster" style="background: url('moviePosters/danny-devito-as-dorgle-in-small-foot-2018-qi.jpg') top no-repeat; background-size: 100% auto; object-fit: contain;">
+        <div class="card card-body movie_poster" style="background: url('moviePosters/Hd-Smallfoot-Poster-1136x640.jpg') top no-repeat; background-size: 100% auto; object-fit: contain;">
             <div class="itemSinopse col-md-6">
-                <p id="title">P√â PEQUENO</p>
-                <p id="info">Anima√ß√£o | Com√©dia</p>
+                <p id="title">P… PEQUENO</p>
+                <p id="info">AnimaÁ„o | ComÈdia</p>
                 <p id="info_title">Sinopse</p>
-                <p id="info_sinop">Uma aventura de anima√ß√£o para todas as idades, com m√∫sica original e um elenco de estrelas, P√© Pequeno vira a lenda do P√© Grande de cabe√ßa para baixo quando um jovem e genial Yeti encontra algo que ele achava que n√£o existia ‚Äì um humano.</p>
+                <p id="info_sinop">Uma aventura de animaÁ„o para todas as idades, com m˙sica original e um elenco de estrelas, PÈ Pequeno vira a lenda do PÈ Grande de cabeÁa para baixo quando um jovem e genial Yeti encontra algo que ele achava que n„o existia ñ um humano.</p>
                 <img class="icon yt_icon" src="css/yt_icon.png">
                 <a class="trailer" href="#">Trailer</a>
                 <div class = "circle imdb_score">6.8</div>
@@ -537,7 +573,7 @@
                         <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span>&emsp; 19:50 &emsp; 22:00</font></p>
                     </div>
                     <div id="menu16" class="tab-pane fade">
-                        <h3><font color="#ffffff">Ter√ßa</font></h3>
+                        <h3><font color="#ffffff">TerÁa</font></h3>
 
                         <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
                         <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span>&emsp;18:40 &emsp; 21:10</font></p><br>
@@ -567,14 +603,14 @@
                         <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp;21:50 &emsp; 22:30</font></p>
                     </div>
                     <div id="menu20" class="tab-pane fade">
-                        <h3><font color="#ffffff">S√°bado</font></h3>
+                        <h3><font color="#ffffff">S·bado</font></h3>
                         <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
                         <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span> &emsp; 13:40 &emsp; 16:10 &emsp; 18:40</font></p><br>
                         <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
                         <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp; 21:50 &emsp; 22:30</font></p>
                     </div>
                     <div id="menu21" class="tab-pane fade">
-                        <h3><font color="#ffffff">S√°bado</font></h3>
+                        <h3><font color="#ffffff">S·bado</font></h3>
                         <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
                         <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span> &emsp; 13:40 &emsp; 16:10 &emsp; 18:40</font></p><br>
 
@@ -587,14 +623,14 @@
     </div>
     <!-- ********** FIM COLLAPSE 3 ********** -->
 
-    <!-- ********** IN√çCIO COLLAPSE 4 ********** -->
+    <!-- ********** INÕCIO COLLAPSE 4 ********** -->
     <div class="collapse multi-collapse" id="collapseExample4">
         <div class="card card-body movie_poster" style="background: url('moviePosters/wallpapersden.com_bohemian-rhapsody-2018-movie-poster_1920x1080.jpg') center no-repeat; background-size: 100% auto; object-fit: contain;">
             <div class="itemSinopse col-md-6">
                 <p id="title">BOHEMIAN RHAPSODY</p>
-                <p id="info">M√∫sica | Biografia</p>
+                <p id="info">M˙sica | Biografia</p>
                 <p id="info_title">Sinopse</p>
-                <p id="info_sinop">Freddie Mercury, Brian May, Roger Taylor e John Deacon formam a banda de rock Queen em 1970. Quando o estilo de vida agitado de Mercury come√ßa a sair de controle, o grupo precisa encontrar uma forma de lidar com o sucesso e os excessos de seu l√≠der.</p>
+                <p id="info_sinop">Freddie Mercury, Brian May, Roger Taylor e John Deacon formam a banda de rock Queen em 1970. Quando o estilo de vida agitado de Mercury comeÁa a sair de controle, o grupo precisa encontrar uma forma de lidar com o sucesso e os excessos de seu lÌder.</p>
                 <img class="icon yt_icon" src="css/yt_icon.png">
                 <a class="trailer" href="#">Trailer</a>
                 <div class = "circle imdb_score">8.4</div>
@@ -629,7 +665,7 @@
                         <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span>&emsp; 19:50 &emsp; 22:00</font></p>
                     </div>
                     <div id="menu2" class="tab-pane fade">
-                        <h3><font color="#ffffff">Ter√ßa</font></h3>
+                        <h3><font color="#ffffff">TerÁa</font></h3>
                         <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
                         <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span>&emsp;18:40 &emsp; 21:10</font></p><br>
 
@@ -660,7 +696,7 @@
                         <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp;21:50 &emsp; 22:30</font></p>
                     </div>
                     <div id="menu6" class="tab-pane fade">
-                        <h3><font color="#ffffff">S√°bado</font></h3>
+                        <h3><font color="#ffffff">S·bado</font></h3>
 
                         <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
                         <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span> &emsp; 13:40 &emsp; 16:10 &emsp; 18:40</font></p><br>
@@ -669,7 +705,7 @@
                         <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp; 21:50 &emsp; 22:30</font></p>
                     </div>
                     <div id="menu7" class="tab-pane fade">
-                        <h3><font color="#ffffff">S√°bado</font></h3>
+                        <h3><font color="#ffffff">S·bado</font></h3>
 
                         <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
                         <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span> &emsp; 13:40 &emsp; 16:10 &emsp; 18:40</font></p><br>
@@ -683,14 +719,14 @@
     </div>
     <!-- ********** FIM COLLAPSE 4 ********** -->
 
-    <!-- ********** IN√çCIO COLLAPSE 5 ********** -->
+    <!-- ********** INÕCIO COLLAPSE 5 ********** -->
     <div class="collapse multi-collapse" id="collapseExample5">
         <div class="card card-body movie_poster" style="background: url('moviePosters/halloween-h.jpg') center no-repeat; background-size: 100% auto; object-fit: contain;">
             <div class="itemSinopse col-md-6">
                 <p id="title">HALLOWEEN</p>
                 <p id="info">Terror | Suspense</p>
                 <p id="info_title">Sinopse</p>
-                <p id="info_sinop">Jamie Lee Curtis retorna ao seu papel ic√¥nico como Laurie Strode, que chega ao seu confronto final com Michael Myers, a figura mascarada que a assombra desde que ela escapou por pouco de sua matan√ßa na noite de Halloween, quatro d√©cadas atr√°s.</p>
+                <p id="info_sinop">Jamie Lee Curtis retorna ao seu papel icÙnico como Laurie Strode, que chega ao seu confronto final com Michael Myers, a figura mascarada que a assombra desde que ela escapou por pouco de sua matanÁa na noite de Halloween, quatro dÈcadas atr·s.</p>
                 <img class="icon yt_icon" src="css/yt_icon.png">
                 <a class="trailer" href="#">Trailer</a>
                 <div class = "circle imdb_score">7.1</div>
@@ -729,7 +765,7 @@
                         <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span>&emsp; 19:50 &emsp; 22:00</font></p>
                     </div>
                     <div id="menu2" class="tab-pane fade">
-                        <h3><font color="#ffffff">Ter√ßa</font></h3>
+                        <h3><font color="#ffffff">TerÁa</font></h3>
 
                         <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
                         <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span>&emsp;18:40 &emsp; 21:10</font></p><br>
@@ -765,7 +801,7 @@
                         <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp;21:50 &emsp; 22:30</font></p>
                     </div>
                     <div id="menu6" class="tab-pane fade">
-                        <h3><font color="#ffffff">S√°bado</font></h3>
+                        <h3><font color="#ffffff">S·bado</font></h3>
 
                         <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
                         <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span> &emsp; 13:40 &emsp; 16:10 &emsp; 18:40</font></p><br>
@@ -774,7 +810,7 @@
                         <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp; 21:50 &emsp; 22:30</font></p>
                     </div>
                     <div id="menu7" class="tab-pane fade">
-                        <h3><font color="#ffffff">S√°bado</font></h3>
+                        <h3><font color="#ffffff">S·bado</font></h3>
 
                         <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
                         <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span> &emsp; 13:40 &emsp; 16:10 &emsp; 18:40</font></p><br>
@@ -788,7 +824,7 @@
     </div>
     <!-- ********** FIM COLLAPSE 5 ********** -->
 
-    <!-- ********** IN√çCIO COLLAPSE 6 ********** -->
+    <!-- ********** INÕCIO COLLAPSE 6 ********** -->
     <div class="collapse multi-collapse" id="collapseExample6">
         <div class="card card-body movie_poster" style="background: url('moviePosters/a12e501a13d7422185c397663fdf60c2.jpg') center no-repeat; background-size: 100% auto; object-fit: contain;">
             <div class="itemSinopse col-md-6"></div>
@@ -824,7 +860,7 @@
                         <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span>&emsp; 19:50 &emsp; 22:00</font></p>
                     </div>
                     <div id="menu2" class="tab-pane fade">
-                        <h3><font color="#ffffff">Ter√ßa</font></h3>
+                        <h3><font color="#ffffff">TerÁa</font></h3>
 
                         <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
                         <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span>&emsp;18:40 &emsp; 21:10</font></p><br>
@@ -860,7 +896,7 @@
                         <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp;21:50 &emsp; 22:30</font></p>
                     </div>
                     <div id="menu6" class="tab-pane fade">
-                        <h3><font color="#ffffff">S√°bado</font></h3>
+                        <h3><font color="#ffffff">S·bado</font></h3>
 
                         <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
                         <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span> &emsp; 13:40 &emsp; 16:10 &emsp; 18:40</font></p><br>
@@ -869,7 +905,7 @@
                         <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp; 21:50 &emsp; 22:30</font></p>
                     </div>
                     <div id="menu7" class="tab-pane fade">
-                        <h3><font color="#ffffff">S√°bado</font></h3>
+                        <h3><font color="#ffffff">S·bado</font></h3>
 
                         <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
                         <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span> &emsp; 13:40 &emsp; 16:10 &emsp; 18:40</font></p><br>
@@ -883,7 +919,7 @@
     </div>
     <!-- ********** FIM COLLAPSE 6 ********** -->
 
-    <!-- ********** IN√çCIO COLLAPSE 7 ********** -->
+    <!-- ********** INÕCIO COLLAPSE 7 ********** -->
     <div class="collapse multi-collapse" id="collapseExample7">
         <div class="card card-body movie_poster" style="background: url('moviePosters/venom-movie-2018-official-poster-ue.jpg') center no-repeat; background-size: 100% auto; object-fit: contain;">
             <div class="itemSinopse"></div>
@@ -892,7 +928,7 @@
     </div>
     <!-- ********** FIM COLLAPSE 7 ********** -->
 
-    <!-- ********** IN√çCIO COLLAPSE 8 ********** -->
+    <!-- ********** INÕCIO COLLAPSE 8 ********** -->
     <div class="collapse multi-collapse" id="collapseExample8">
         <div class="card card-body movie_poster" style="background: url('moviePosters/maxresdefault (1).jpg') center no-repeat; background-size: 100% auto; object-fit: contain;">
             <div class="itemSinopse"></div>
@@ -901,7 +937,7 @@
     </div>
     <!-- ********** FIM COLLAPSE 8 ********** -->
 
-    <!-- ********** IN√çCIO COLLAPSE 9 ********** -->
+    <!-- ********** INÕCIO COLLAPSE 9 ********** -->
    <div class="collapse multi-collapse" id="collapseExample9">
         <div class="card card-body movie_poster" style="background: url('moviePosters/legiao_KUaGIRjHeL6Csb8lgydpkoi_qESZFf2zV09Jc5nvPx.jpg.jpeg') top no-repeat; background-size: 100% auto; object-fit: contain;">
             <div class="itemSinopse"></div>
@@ -910,7 +946,7 @@
     </div>
     <!-- ********** FIM COLLAPSE 9 ********** -->
 
-    <!-- ********** IN√çCIO COLLAPSE 10 ********** -->
+    <!-- ********** INÕCIO COLLAPSE 10 ********** -->
     <div class="collapse multi-collapse" id="collapseExample10">
         <div class="card card-body movie_poster" style="background: url('moviePosters/a_star_is_born_2018_movie_4k.jpg') bottom no-repeat; background-size: 100% auto; object-fit: contain;">
             <div class="itemSinopse"></div>
@@ -918,8 +954,18 @@
         </div>
     </div>
     <!-- ********** FIM COLLAPSE 10 ********** -->
-
 <!-- ************************************** FIM COLLAPSES DO CARROSSEL "EM CARTAZ" ********************** -->
+
+    <!-- Return to Top -->
+    <a href="javascript:" id="return-to-top"><i><span class="glyphicon glyphicon-chevron-up"></i></a>
+
+    <!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link href="css/letreiro.scss" rel="stylesheet/scss" type="text/scss">
+    <!-- Test the scroll -->
+    <div style="height:2000px;">
+        <div class="logo">
+    </div>
 
 </div>
 

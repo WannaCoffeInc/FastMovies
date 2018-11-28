@@ -1,3 +1,138 @@
+/* Header */
+/*https://css-tricks.com/creating-non-rectangular-headers/*/
+/*header {
+  position: relative;
+  height: 200px;
+background: rgba(102,1,84,1);
+background: -moz-linear-gradient(top, rgba(102,1,84,1) 0%, rgba(128,2,103,1) 0%, rgba(245,131,10,1) 87%, rgba(235,192,0,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(102,1,84,1)), color-stop(0%, rgba(128,2,103,1)), color-stop(87%, rgba(245,131,10,1)), color-stop(100%, rgba(235,192,0,1)));
+background: -webkit-linear-gradient(top, rgba(102,1,84,1) 0%, rgba(128,2,103,1) 0%, rgba(245,131,10,1) 87%, rgba(235,192,0,1) 100%);
+background: -o-linear-gradient(top, rgba(102,1,84,1) 0%, rgba(128,2,103,1) 0%, rgba(245,131,10,1) 87%, rgba(235,192,0,1) 100%);
+background: -ms-linear-gradient(top, rgba(102,1,84,1) 0%, rgba(128,2,103,1) 0%, rgba(245,131,10,1) 87%, rgba(235,192,0,1) 100%);
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+}
+
+h1 {
+  margin: 0;
+  padding: 50px 0;
+  font: 40px "Arial";
+  text-align: center;
+}
+
+header h1 {
+  color: white;
+}
+
+body{
+    background-color: #990579;
+}*/
+
+.navbar {
+  position: relative;
+  height: 80px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  z-index: 100;
+  transition: background-color 1s ease 0s;
+}
+
+.navbar-default {
+  
+   .navbar-brand {
+     margin-top: 10px;
+     color: white;
+        
+      &:hover {
+         color: #C57ED3;
+         border: 1px solid #C57ED3;
+      } 
+   }
+   
+  .navbar-nav {
+    
+    > li {
+      
+      > a {
+        color: white;
+        margin: 10px 5px 5px 5px;
+        
+      }
+      > a:hover, > a:active, > a:focus {
+        color: #C57ED3;
+        border: 1px solid #C57ED3;
+      }
+      > a:visited {
+        color: #C57ED3;
+        text-decoration: none;
+      }
+
+    } //end li
+
+    > .active {
+
+      > a, > a:hover, > a:focus {
+        background-color: transparent;
+        color: #C57ED3;
+      }
+
+    }
+
+  } //end .navbar-nav
+
+  //Collapsed styles
+  .navbar-toggle {
+    border-color: #C57ED3;
+
+      &:hover, &:focus {
+        background-color: #490D40;
+      }
+
+
+
+      .icon-bar {
+        color: #C57ED3;
+        background-color: #C57ED3;
+
+      }
+  }
+
+  .navbar-collapse.collapse.in ul {
+    background-color: #490D40;
+  }
+    
+} //end .navbar-default
+
+
+
+/* Solid class attached on scroll past first section */
+
+.navbar.solid {
+  background-color: #490D40;
+  transition: background-color 1s ease 0s;
+  box-shadow: 0 0 4px grey;
+
+    .navbar-brand {
+      color: #C57ED3;
+      transition: color 1s ease 0s;
+    }
+
+    .navbar-nav {
+
+       > li {
+
+          > a {
+            color: #C57ED3;
+            transition: color 1s ease 0s;
+          }
+
+       } //end li
+
+    } //end .navbar-nav
+
+}
+
 /*Destaques grid*/
 
 .grid_container {
@@ -6,7 +141,7 @@
   grid-template-areas: "poster_destaque trailer_destaque";
   grid-template-columns: 25% 4fr;
   grid-template-rows: 100%;
-  margin: 20px;
+  margin: 0px;
 }
 
 .grid_container > div {
@@ -413,6 +548,51 @@ a.trailer{
 .f2D {background-color: #ff9800;} /* Orange */
 .f3D {background-color: #f44336;} /* Red */ 
 .f4K {background-color: #e7e7e7; color: black;} /* Gray */ 
+
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+/**********************************/
+
+/* Extra Things */
+body{background: #eee ;font-family: 'Open Sans', sans-serif;}h3{font-size: 30px; font-weight: 400;text-align: center;margin-top: 50px;}h3 i{color: #444;}
 
 /*tile css*/
 
