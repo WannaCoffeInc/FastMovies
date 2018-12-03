@@ -11,7 +11,7 @@
     <link href="css/resCarousel.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong:300,400,400i,500,600,700" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">  
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
     <style>
     body {
@@ -34,7 +34,7 @@
         display: table;
         width: 100%;
         min-height: 350px;
-        text-align: center; 
+        text-align: center;
         /*box-shadow: 0 1px 1px rgba(0, 0, 0, .1);*/
     }
 
@@ -160,152 +160,15 @@
 <br>
 
 <!--home-->
-<div class="container p8">
+<div class="container p8" id="divContainer">
     <!-- <h4>data-items="2-3-4-5" data-slide="5" data-speed="900" data-interval="4000" data-load="3" data-animator="lazy"</h4> -->
 
 <!-- ************************************** INÍCIO CARROSSEL "EM CARTAZ" ************************************** -->
     <div class="resCarousel" data-items="2-3-4-5" data-slide="2" data-speed="900">
         <div class="resCarousel-inner" id="eventLoad">
 
-            <div class="item">
-                <div class="tile" style="background: url('moviePosters/grinch.jpg') center center no-repeat; background-size: 100% 100%; object-fit: contain;">
-                    <div>
-                        <span id = "movie_title">
-                            O Grinch
-                            <a class = "information" data-toggle="collapse" href="#collapseExample1" role="button">
-                                <i class="fas fa-plus-circle fa-3x" style="color: yellow;"></i>
-                            </a>                                
-                        </span>                            
-                    </div>
-                </div>
-                <div class="triangulo"></div>
-            </div>
+            <!-- Cada filme é inserido aqui pelo arquivo js/appendCarousel.js -->
 
-            <div class="item">
-                <div class="tile" style="background: url('moviePosters/quebraNozes.jpg') center center no-repeat; background-size: 100% 100%; object-fit: contain;">
-                    <div>
-                        <span id = "movie_title">
-                            O Quebra-Nozes e os Quatro Reinos
-                            <a class = "information" data-toggle="collapse" href="#collapseExample2" role="button">
-                                <i class="fas fa-plus-circle fa-3x" style="color: yellow;"></i>
-                            </a>
-                        </span>
-                    </div>
-                </div>
-                <div class="triangulo"></div>
-            </div>
-
-            <div class="item">
-                <div class="tile" style="background: url('moviePosters/PePequeno.jpg') center center no-repeat; background-size: 100% 100%; object-fit: contain;">
-                    <div>
-                        <span id = "movie_title">
-                            Pé Pequeno
-                            <a class = "information" data-toggle="collapse" href="#collapseExample3" role="button">
-                                <i class="fas fa-plus-circle fa-3x" style="color: yellow;"></i>
-                            </a>
-                        </span>
-                    </div>
-                </div>
-                <div class="triangulo"></div>
-            </div>
-
-            <div class="item">
-                <div class="tile" style="background: url('moviePosters/d58677de7d7f64d820bfa646a78d95df.jpg') center center no-repeat; background-size: 100% 100%; object-fit: contain;">
-                    <div>
-                        <span id = "movie_title">
-                            Bohemian Rhapsody
-                            <a class = "information" data-toggle="collapse" href="#collapseExample4" role="button">
-                                <i class="fas fa-plus-circle fa-3x" style="color: yellow;"></i>
-                            </a>
-                        </span>
-                    </div>
-                </div>
-                <div class="triangulo"></div>
-            </div>
-
-            <div class="item">
-                <div class="tile" style="background: url('moviePosters/Halloween-2018-Poster-the-halloween-movies-41553252-1294-2048.png') center center no-repeat; background-size: 100% 100%; object-fit: contain;">
-                    <div>
-                        <span id = "movie_title">
-                            Halloween
-                            <a class = "information" data-toggle="collapse" href="#collapseExample5" role="button">
-                                <i class="fas fa-plus-circle fa-3x" style="color: yellow;"></i>
-                            </a>
-                        </span>
-                    </div>
-                </div>
-                <div class="triangulo"></div>
-            </div>
-
-            <div class="item">
-                <div class="tile" style="background: url('moviePosters/MV5BMjI4Mj.jpg') center center no-repeat; background-size: 100% 100%; object-fit: contain;">
-                    <div>
-                        <span id = "movie_title">
-                            Jhonny English 3
-                            <a class = "information" data-toggle="collapse" href="#collapseExample6" role="button">
-                                <i class="fas fa-plus-circle fa-3x" style="color: yellow;"></i>
-                            </a>
-                        </span>
-                    </div>
-                </div>
-                <div class="triangulo"></div>
-            </div>
-
-            <div class="item">
-                <div class="tile" style="background: url('moviePosters/venompostertransform.jpg') center center no-repeat; background-size: 100% 100%; object-fit: contain;">
-                    <div>
-                        <span id = "movie_title">
-                            Venom
-                            <a class = "information" data-toggle="collapse" href="#collapseExample7" role="button">
-                                <i class="fas fa-plus-circle fa-3x" style="color: yellow;"></i>
-                            </a>
-                        </span>
-                    </div>
-                </div>
-                <div class="triangulo"></div>
-            </div>
-
-            <div class="item">
-                <div class="tile" style="background: url('moviePosters/5582578.jpg') center center no-repeat; background-size: 100% 100%; object-fit: contain;">
-                    <div>
-                        <span id = "movie_title">
-                            Tudo por um Popstar
-                            <a class = "information" data-toggle="collapse" href="#collapseExample8" role="button">
-                                <i class="fas fa-plus-circle fa-3x" style="color: yellow;"></i>
-                            </a>
-                        </span>
-                    </div>
-                </div>
-                <div class="triangulo"></div>
-            </div>
-
-            <div class="item">
-                <div class="tile" style="background: url('moviePosters/MV5BMGU4YjQyMGQtM.jpg') center center no-repeat; background-size: 100% 100%; object-fit: contain;">
-                    <div>
-                        <span id = "movie_title">
-                            O Doutrinador
-                            <a class = "information" data-toggle="collapse" href="#collapseExample9" role="button">
-                                <i class="fas fa-plus-circle fa-3x" style="color: yellow;"></i>
-                            </a>
-                        </span>
-                    </div>
-                </div>
-                <div class="triangulo"></div>
-            </div>
-
-            <div class="item">
-                <div class="tile" style="background: url('moviePosters/a-star-is-born-portuguese-movie-poster.jpg') center center no-repeat; background-size: 100% 100%; object-fit: contain;">
-                    <div>
-                        <span id = "movie_title">
-                            Assim Nasce um Estrela
-                            <a class = "information" data-toggle="collapse" href="#collapseExample10" role="button">
-                                <i class="fas fa-plus-circle fa-3x" style="color: yellow;"></i>
-                            </a>
-                        </span>
-                    </div>
-                </div>
-                <div class="triangulo"></div>
-            </div>
         </div>
         <button class='btn btn-default leftRs'></button>
         <button class='btn btn-default rightRs'></button>
@@ -326,7 +189,7 @@
                 <a class="trailer" href="#">Trailer</a>
                 <div class = "circle imdb_score">5.0</div>
                 <div class = "circle PG livre">L</div>
-                <img class="icon imdb_icon" src="css/imdb.png"> 
+                <img class="icon imdb_icon" src="css/imdb.png">
             </div>
             <div class="itemSessoes col-md-6">
                 <ul class="nav nav-tabs">
@@ -398,7 +261,7 @@
                         <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp; 21:50 &emsp; 22:30</font></p>
                     </div>
                 </div>
-            </div> 
+            </div>
         </div>
     </div>
     <!-- ********** FIM COLLAPSE 1 ********** -->
@@ -445,7 +308,7 @@
                         <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span>&emsp; 19:50 &emsp; 22:00</font></p>
                     </div>
                     <div id="menu9" class="tab-pane fade">
-                        <h3><font color="#ffffff">Terça</font></h3>                       
+                        <h3><font color="#ffffff">Terça</font></h3>
                         <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
                         <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span>&emsp;18:40 &emsp; 21:10</font></p><br>
                         <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
@@ -490,7 +353,7 @@
                 </div>
             </div>
         </div>
-    </div>   
+    </div>
     <!-- ********** FIM COLLAPSE 2 ********** -->
 
     <!-- ********** INÍCIO COLLAPSE 3 ********** -->
@@ -637,9 +500,9 @@
                         <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp; 19:50&emsp; 22:00</font></p>
                     </div>
                     <div id="menu3" class="tab-pane fade">
-                        <h3><font color="#ffffff">Quarta</font></h3>                        
+                        <h3><font color="#ffffff">Quarta</font></h3>
                         <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
-                        <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span> &emsp; 13:40 &emsp;16:10 &emsp; 18:40</font></p><br>                        
+                        <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span> &emsp; 13:40 &emsp;16:10 &emsp; 18:40</font></p><br>
                         <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
                         <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp; 21:50 &emsp; 22:30</font></p>
                     </div>
@@ -1003,6 +866,7 @@ if (lenghtI <= 30) {
 });
 </script>
 <script src="js/resCarousel.js"></script>
+<script src="js/appendCarousel.js"></script>
 </body>
 
 </html>
