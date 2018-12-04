@@ -1,137 +1,3 @@
-/* Header */
-/*https://css-tricks.com/creating-non-rectangular-headers/*/
-/*header {
-  position: relative;
-  height: 200px;
-background: rgba(102,1,84,1);
-background: -moz-linear-gradient(top, rgba(102,1,84,1) 0%, rgba(128,2,103,1) 0%, rgba(245,131,10,1) 87%, rgba(235,192,0,1) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(102,1,84,1)), color-stop(0%, rgba(128,2,103,1)), color-stop(87%, rgba(245,131,10,1)), color-stop(100%, rgba(235,192,0,1)));
-background: -webkit-linear-gradient(top, rgba(102,1,84,1) 0%, rgba(128,2,103,1) 0%, rgba(245,131,10,1) 87%, rgba(235,192,0,1) 100%);
-background: -o-linear-gradient(top, rgba(102,1,84,1) 0%, rgba(128,2,103,1) 0%, rgba(245,131,10,1) 87%, rgba(235,192,0,1) 100%);
-background: -ms-linear-gradient(top, rgba(102,1,84,1) 0%, rgba(128,2,103,1) 0%, rgba(245,131,10,1) 87%, rgba(235,192,0,1) 100%);
-  border-bottom-left-radius: 50% 20%;
-  border-bottom-right-radius: 50% 20%;
-}
-
-h1 {
-  margin: 0;
-  padding: 50px 0;
-  font: 40px "Arial";
-  text-align: center;
-}
-
-header h1 {
-  color: white;
-}
-
-body{
-    background-color: #990579;
-}*/
-
-.navbar {
-  position: relative;
-  height: 80px;
-  background-color: transparent;
-  border: none;
-  color: white;
-  z-index: 100;
-  transition: background-color 1s ease 0s;
-}
-
-.navbar-default {
-  
-   .navbar-brand {
-     margin-top: 10px;
-     color: white;
-        
-      &:hover {
-         color: #C57ED3;
-         border: 1px solid #C57ED3;
-      } 
-   }
-   
-  .navbar-nav {
-    
-    > li {
-      
-      > a {
-        color: white;
-        margin: 10px 5px 5px 5px;
-        
-      }
-      > a:hover, > a:active, > a:focus {
-        color: #C57ED3;
-        border: 1px solid #C57ED3;
-      }
-      > a:visited {
-        color: #C57ED3;
-        text-decoration: none;
-      }
-
-    } //end li
-
-    > .active {
-
-      > a, > a:hover, > a:focus {
-        background-color: transparent;
-        color: #C57ED3;
-      }
-
-    }
-
-  } //end .navbar-nav
-
-  //Collapsed styles
-  .navbar-toggle {
-    border-color: #C57ED3;
-
-      &:hover, &:focus {
-        background-color: #490D40;
-      }
-
-
-
-      .icon-bar {
-        color: #C57ED3;
-        background-color: #C57ED3;
-
-      }
-  }
-
-  .navbar-collapse.collapse.in ul {
-    background-color: #490D40;
-  }
-    
-} //end .navbar-default
-
-
-
-/* Solid class attached on scroll past first section */
-
-.navbar.solid {
-  background-color: #490D40;
-  transition: background-color 1s ease 0s;
-  box-shadow: 0 0 4px grey;
-
-    .navbar-brand {
-      color: #C57ED3;
-      transition: color 1s ease 0s;
-    }
-
-    .navbar-nav {
-
-       > li {
-
-          > a {
-            color: #C57ED3;
-            transition: color 1s ease 0s;
-          }
-
-       } //end li
-
-    } //end .navbar-nav
-
-}
 
 /*Destaques grid*/
 
@@ -212,6 +78,28 @@ body{
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+/*divCartaz*/
+
+.divCartaz{ 
+    display: -webkit-flex; /* Safari */
+    -webkit-align-items: center; /* Safari 7.0+ */
+    display: flex;
+    align-items: center center;
+    background-color: rgba(255,255,255,.4); 
+    margin-bottom: 10px; 
+    width: 100%; 
+    height: 90px;
+    color: rgb(255,255,255,.75);
+    font-size: 15pt;
+
+    font-family: 'Trirong', serif;
+    background: rgb(39,0,65);
+    background: linear-gradient(90deg, 
+            rgba(39,0,65,0.9766281512605042) 0%, 
+            rgba(93,6,150,0.7693452380952381) 50%, 
+            rgba(255,121,0,0.7049194677871149) 100%);
 }
 
 /*resCarousel Css*/
@@ -493,7 +381,8 @@ a.trailer{
 
 .nav{
 /*    background-color: rgba(51,0,51,.8);
-*/    position: absolute;
+*/  
+    position: absolute;
     display: block;
     margin: auto;
     width: 595px;
@@ -503,11 +392,17 @@ a.trailer{
     left: 2.5%;
     right: 2.5%;
     transform: (-2.5%, -2.5%);
+    border: none;
 }
 
 .nav > li{
     border: 1px solid #888;
+    border-radius: .4em;
     color: white;
+}
+
+.nav>li>a{
+    transition: .5s ease;
 }
 
 .hour{
@@ -515,15 +410,25 @@ a.trailer{
 }
 
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
-    background-color: rgba(51,0,51,1);
+    border-radius: .4em;
+    background: transparent;
+    width: 100%;
+    background: rgb(21,0,56);
+    background: linear-gradient(180deg, rgba(21,0,56,1) 0%, rgba(52,22,94,1) 100%);
+/*    background: rgba(1,1,1,.8);*/
 }
 
 .nav-tabs>li>a:hover{
-    background-color: rgba(51,0,51,1);
+    opacity: 1;
+    border-radius: .4em;
+    width: 100%;
+    background: rgb(21,0,56);
+    background: linear-gradient(180deg, rgba(21,0,56,1) 0%, rgba(52,22,94,1) 100%);
+/*  background: rgba(1,1,1,.8); */
 }
 
 .horarios{
-/*    background-color: rgba(51,0,51,.8);*/    
+/*  background-color: rgba(51,0,51,.8);*/    
     position: absolute;
     display: block;
     margin: auto;
@@ -535,7 +440,7 @@ a.trailer{
     transform: (-2.5%, -2.5%);
 }
 
-.label {
+.label{
     color: white;
     padding: 7px;
     font-family: Arial;
@@ -620,4 +525,4 @@ body{background: #eee ;font-family: 'Open Sans', sans-serif;}h3{font-size: 30px;
 }
 
 
-/*resCarousel Css End*/
+/*resCarousel Css End
