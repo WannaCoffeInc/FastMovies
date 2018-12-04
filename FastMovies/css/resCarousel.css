@@ -1,105 +1,107 @@
-
 /*Destaques grid*/
 
 .grid_container {
-  display: grid;
-  height: 100%;
-  grid-template-areas: "poster_destaque trailer_destaque";
-  grid-template-columns: 25% 4fr;
-  grid-template-rows: 100%;
-  margin: 0px;
+    display: grid;
+    height: 100%;
+    grid-template-areas: "poster_destaque trailer_destaque";
+    grid-template-columns: 25% 4fr;
+    grid-template-rows: 100%;
+    margin: 0px;
 }
 
-.grid_container > div {
-  border: 1px ;/*dashed #888;*/
-/*  border-radius: .4em;*/
-
+.grid_container>div {
+    border: 1px;
+    /*dashed #888;*/
+    /*  border-radius: .4em;*/
 }
 
-.poster_destaque{
+.poster_destaque {
     grid-area: poster_destaque;
     position: relative;
     max-height: 100%;
 }
 
-.poster_destaque > img{
+.poster_destaque>img {
     max-width: 100%;
     max-height: 100%;
     height: 100%;
 }
 
 .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: rgba(0,0,1,0.7);
-  z-index: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: rgba(0, 0, 1, 0.7);
+    z-index: 0;
 }
 
-.poster_destaque:hover .overlay{
-  opacity: 1;
+.poster_destaque:hover .overlay {
+    opacity: 1;
 }
 
-.poster_destaque:hover #movie_title{
-    display:table;
-    margin:0 auto;    
+.poster_destaque:hover #movie_title {
+    display: table;
+    margin: 0 auto;
     padding-top: 70px;
-    vertical-align: top;    
+    vertical-align: top;
     color: white;
     font-size: 17pt;
     opacity: 1;
 }
 
-.poster_destaque:hover .information{
-    display:table;
-    margin:0 auto;
+.poster_destaque:hover .information {
+    display: table;
+    margin: 0 auto;
     padding-top: 70px;
     color: white;
     font-size: 17pt;
 }
 
-.trailer_destaque{
+.trailer_destaque {
     grid-area: trailer_destaque;
     position: relative;
     width: 100%;
     height: 0;
-    padding-top: 56.25% /* 9 / 16 * 100% */
+    padding-top: 56.25%
+        /* 9 / 16 * 100% */
 }
 
-.embed_trailer{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.embed_trailer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 /*divCartaz*/
 
-.divCartaz{ 
-    display: -webkit-flex; /* Safari */
-    -webkit-align-items: center; /* Safari 7.0+ */
+.divCartaz {
+    display: -webkit-flex;
+    /* Safari */
+    -webkit-align-items: center;
+    /* Safari 7.0+ */
     display: flex;
     align-items: center center;
-    background-color: rgba(255,255,255,.4); 
-    margin-bottom: 10px; 
-    width: 100%; 
+    background-color: rgba(255, 255, 255, .4);
+    margin-bottom: 10px;
+    width: 100%;
     height: 90px;
-    color: rgb(255,255,255,.75);
+    color: rgb(255, 255, 255, .75);
     font-size: 15pt;
 
     font-family: 'Trirong', serif;
-    background: rgb(39,0,65);
-    background: linear-gradient(90deg, 
-            rgba(39,0,65,0.9766281512605042) 0%, 
-            rgba(93,6,150,0.7693452380952381) 50%, 
-            rgba(255,121,0,0.7049194677871149) 100%);
+    background: rgb(39, 0, 65);
+    background: linear-gradient(90deg,
+        rgba(39, 0, 65, 0.9766281512605042) 0%,
+        rgba(93, 6, 150, 0.7693452380952381) 50%,
+        rgba(255, 121, 0, 0.7049194677871149) 100%);
 }
 
 /*resCarousel Css*/
@@ -109,6 +111,7 @@
 }
 
 .leftRs {
+    visibility: visible;
     position: absolute;
     margin: auto;
     top: 0;
@@ -122,6 +125,7 @@
 }
 
 .rightRs {
+    visibility: visible;
     position: absolute;
     margin: auto;
     top: 0;
@@ -136,7 +140,7 @@
 
 .resCarousel {
     /*float: left;
-    overflow: hidden;*/
+      overflow: hidden;*/
     width: 100%;
     position: relative;
     border-radius: .4em;
@@ -147,8 +151,7 @@
     white-space: nowrap;
     font-size: 0;
     vertical-align: top;
-    border-radius: .4em; 
-
+    border-radius: .4em;
 }
 
 .resCarousel-inner .item {
@@ -156,18 +159,37 @@
     display: inline-block;
     font-size: 14px;
     white-space: initial;
-    border-radius: .4em;
+    border-radius: 0.4em;
 }
 
-.item:hover{
-    background: rgba(0, 0, 1, 0.6);
+.item:hover {
+    background: rgba(0, 0, 1, 0.4);
 }
 
-span#movie_title, a.information{
+.item:hover .over {
+    opacity: 1;
+}
+
+.over {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.75s ease;
+    /* background-color: rgba(0,0,1,0.7); */
+    z-index: 0;
+}
+
+span#movie_title,
+a.information {
     display: none;
 }
 
-.item:hover #movie_title{
+.item:hover #movie_title {
     display: table-cell;
     padding-top: 60px;
     vertical-align: top;
@@ -175,7 +197,7 @@ span#movie_title, a.information{
     font-size: 12pt;
 }
 
-.item:hover .information{
+.item:hover .information {
     display: block;
     padding-top: 70px;
     vertical-align: middle;
@@ -187,8 +209,10 @@ span#movie_title, a.information{
     position: relative;
     display: none;
 }
-.triangulo:after { /*Trianguluzinho que aparece com collapse*/
-    content: '';
+
+.triangulo:after {
+    /*Trianguluzinho que aparece com collapse*/
+    content: "";
     float: bottom;
     position: absolute;
     bottom: 0px;
@@ -203,8 +227,7 @@ span#movie_title, a.information{
     display: block;
 }
 
-
-.card{
+.card {
     height: 500px;
     position: relative;
     border-radius: .4em;
@@ -214,7 +237,7 @@ span#movie_title, a.information{
     width: 100%;
 }
 
-.itemSinopse{
+.itemSinopse {
     position: relative;
     display: inline-block;
     background: rgba(0, 0, 1, 0.7);
@@ -223,7 +246,7 @@ span#movie_title, a.information{
     width: 38%;
 }
 
-.itemSinopse p#title{
+.itemSinopse p#title {
     display: block;
     position: absolute;
     color: white;
@@ -235,7 +258,7 @@ span#movie_title, a.information{
     width: 70%;
 }
 
-.itemSinopse p#info{
+.itemSinopse p#info {
     display: block;
     position: absolute;
     color: white;
@@ -246,7 +269,7 @@ span#movie_title, a.information{
     top: 60px;
 }
 
-.itemSinopse p#info_title{
+.itemSinopse p#info_title {
     display: block;
     position: absolute;
     color: white;
@@ -257,7 +280,7 @@ span#movie_title, a.information{
     top: 150px;
 }
 
-.itemSinopse p#info_sinop{
+.itemSinopse p#info_sinop {
     display: block;
     position: absolute;
     color: white;
@@ -278,7 +301,8 @@ span#movie_title, a.information{
     line-height: 50px;
     border-style: solid;
     border-width: 2px;
-    border-radius: 50%; /* the magic */
+    border-radius: 50%;
+    /* the magic */
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     text-align: center;
@@ -288,7 +312,7 @@ span#movie_title, a.information{
     margin: 0 auto 10px;
 }
 
-.imdb_score{
+.imdb_score {
     position: absolute;
     border-color: gold;
     color: gold;
@@ -296,7 +320,7 @@ span#movie_title, a.information{
     top: 15px;
 }
 
-.PG{
+.PG {
     position: absolute;
     font-family: 'Arial';
     left: 80%;
@@ -305,55 +329,56 @@ span#movie_title, a.information{
     color: white;
 }
 
-.livre{
+.livre {
     border-color: green;
     background: green;
 }
 
-.pg-12{
+.pg-12 {
     border-color: blue;
-    background: blue;    
+    background: blue;
 }
 
-.pg-14{
+.pg-14 {
     border-color: orange;
-    background: orange;    
+    background: orange;
 }
 
-.pg-16{
+.pg-16 {
     border-color: red;
-    background: red;    
+    background: red;
 }
 
-.pg-18{
+.pg-18 {
     border-color: black;
-    background: black;    
+    background: black;
 }
 
-.icon{
+.icon {
     max-width: 100%;
-    width: 45px; 
+    width: 45px;
     height: 29px;
-    position: absolute; 
+    position: absolute;
 }
 
-.imdb_icon{ 
+.imdb_icon {
     left: 81%;
     top: 70px;
-    display: inline-block; 
+    display: inline-block;
     border-radius: 0.4em;
 }
 
-.yt_icon{
+.yt_icon {
     left: 30px;
     top: 300px;
-    width: 35px; 
+    width: 35px;
     height: 22px;
-    display: inline-block; 
+    display: inline-block;
 }
-a.trailer{
+
+a.trailer {
     position: absolute;
-    display: inline-block; 
+    display: inline-block;
     color: white;
     font-family: "open sans", sans-serif;
     font-size: 1vw;
@@ -363,9 +388,9 @@ a.trailer{
 
 }
 
-.itemSessoes{
+.itemSessoes {
     position: relative;
-    display: inline-block; 
+    display: inline-block;
     background: rgba(0, 0, 1, 0.7);
     border-width: 5px;
     height: 95%;
@@ -378,10 +403,9 @@ a.trailer{
     overflow: hidden !important;
 }
 
-
-.nav{
-/*    background-color: rgba(51,0,51,.8);
-*/  
+.nav {
+    /*    background-color: rgba(51,0,51,.8);
+  */
     position: absolute;
     display: block;
     margin: auto;
@@ -395,40 +419,42 @@ a.trailer{
     border: none;
 }
 
-.nav > li{
+.nav>li {
     border: 1px solid #888;
     border-radius: .4em;
     color: white;
 }
 
-.nav>li>a{
+.nav>li>a {
     transition: .5s ease;
 }
 
-.hour{
+.hour {
     color: white;
 }
 
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover {
     border-radius: .4em;
     background: transparent;
     width: 100%;
-    background: rgb(21,0,56);
-    background: linear-gradient(180deg, rgba(21,0,56,1) 0%, rgba(52,22,94,1) 100%);
-/*    background: rgba(1,1,1,.8);*/
+    background: rgb(21, 0, 56);
+    background: linear-gradient(180deg, rgba(21, 0, 56, 1) 0%, rgba(52, 22, 94, 1) 100%);
+    /*    background: rgba(1,1,1,.8);*/
 }
 
-.nav-tabs>li>a:hover{
+.nav-tabs>li>a:hover {
     opacity: 1;
     border-radius: .4em;
     width: 100%;
-    background: rgb(21,0,56);
-    background: linear-gradient(180deg, rgba(21,0,56,1) 0%, rgba(52,22,94,1) 100%);
-/*  background: rgba(1,1,1,.8); */
+    background: rgb(21, 0, 56);
+    background: linear-gradient(180deg, rgba(21, 0, 56, 1) 0%, rgba(52, 22, 94, 1) 100%);
+    /*  background: rgba(1,1,1,.8); */
 }
 
-.horarios{
-/*  background-color: rgba(51,0,51,.8);*/    
+.horarios {
+    /*  background-color: rgba(51,0,51,.8);*/
     position: absolute;
     display: block;
     margin: auto;
@@ -440,19 +466,40 @@ a.trailer{
     transform: (-2.5%, -2.5%);
 }
 
-.label{
+.label {
     color: white;
     padding: 7px;
     font-family: Arial;
     border-radius: .4em;
-    font-size: 10pt; 
+    font-size: 10pt;
 }
 
-.dublado {background-color: #4CAF50;} /* Green */
-.legendado {background-color: #2196F3;} /* Blue */
-.f2D {background-color: #ff9800;} /* Orange */
-.f3D {background-color: #f44336;} /* Red */ 
-.f4K {background-color: #e7e7e7; color: black;} /* Gray */ 
+.dublado {
+    background-color: #4CAF50;
+}
+
+/* Green */
+.legendado {
+    background-color: #2196F3;
+}
+
+/* Blue */
+.f2D {
+    background-color: #ff9800;
+}
+
+/* Orange */
+.f3D {
+    background-color: #f44336;
+}
+
+/* Red */
+.f4K {
+    background-color: #e7e7e7;
+    color: black;
+}
+
+/* Gray */
 
 #return-to-top {
     position: fixed;
@@ -474,6 +521,7 @@ a.trailer{
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
+
 #return-to-top i {
     color: #fff;
     margin: 0;
@@ -487,17 +535,34 @@ a.trailer{
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
+
 #return-to-top:hover {
     background: rgba(0, 0, 0, 0.9);
 }
+
 #return-to-top:hover i {
     color: #fff;
     top: 5px;
 }
+
 /**********************************/
 
 /* Extra Things */
-body{background: #eee ;font-family: 'Open Sans', sans-serif;}h3{font-size: 30px; font-weight: 400;text-align: center;margin-top: 50px;}h3 i{color: #444;}
+body {
+    background: #eee;
+    font-family: "Open Sans", sans-serif;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h3 i {
+    color: #444;
+}
 
 /*tile css*/
 
@@ -514,15 +579,215 @@ body{background: #eee ;font-family: 'Open Sans', sans-serif;}h3{font-size: 30px;
     transition: .6s ease all;
 }
 
-@media (max-width: 767px) {
-    .leftRs,
-    .rightRs {
-        /*display: none;*/
+/*  R E S P O N S I V I D A D E  */
+
+@media screen and (min-width: 550px) and (max-width: 766px) {
+    .container {
+        width: 550px;
     }
-    .resCarousel-inner {
-        overflow-x: auto;
+
+    .itemSessoes {
+        display: block;
+        height: 61%;
+        width: 98%;
+    }
+
+    .itemSinopse {
+        width: 98%;
+        height: 35%;
+    }
+
+    .itemSinopse p#title {
+        left: 9px;
+        font-size: 15px;
+    }
+
+    .itemSinopse p#info {
+        left: 10px;
+        top: 39px;
+        font-size: 12px;
+    }
+
+    .itemSinopse p#info_title {
+        left: 10px;
+        top: 75px;
+        font-size: 12px;
+    }
+
+    .itemSinopse p#info_sinop {
+        left: 10px;
+        top: 95px;
+        font-size: 9px;
+    }
+
+    .yt_icon {
+        left: 10px;
+        top: 135px;
+        width: 20px;
+        height: 14px;
+        position: absolute;
+    }
+
+    a.trailer {
+        position: absolute;
+        left: 32px;
+        top: 137px;
+        font-size: 9px;
+    }
+
+    .imdb_score {
+        left: 88%;
+        width: 40px;
+        height: 40px;
+        line-height: 38px;
+        font-size: 15px;
+    }
+
+    .imdb_icon {
+        left: 88.5%;
+        top: 59px;
+        width: 35px;
+        height: 23px;
+        position: absolute;
+    }
+
+    .livre {
+        left: 79.5%;
+        top: 18px;
+        width: 35px;
+        height: 35px;
+        line-height: 32px;
+    }
+
+    .nav>li {
+        width: 12.5%;
+        height: 80%;
+    }
+
+    .nav {
+        width: 470px;
+    }
+
+    h3 {
+        font-size: 15px;
+        margin-top: 0px;
+    }
+
+    .tab-content>.active {
+        width: 95%
     }
 }
 
+@media screen and (min-width: 0px) and (max-width: 549px) {
+    .container {
+        width: 300px;
+    }
 
-/*resCarousel Css End
+    .itemSessoes {
+        display: block;
+        height: 52%;
+        width: 98%;
+    }
+
+    .itemSinopse {
+        width: 98%;
+        height: 45%;
+    }
+
+    .itemSinopse p#title {
+        left: 9px;
+        font-size: 15px;
+        top: 10px;
+    }
+
+    .itemSinopse p#info {
+        left: 10px;
+        top: 26px;
+        font-size: 11px;
+    }
+
+    .itemSinopse p#info_title {
+        left: 10px;
+        top: 65px;
+        font-size: 11px;
+    }
+
+    .itemSinopse p#info_sinop {
+        left: 10px;
+        top: 90px;
+        font-size: 9px;
+    }
+
+    .yt_icon {
+        left: 10px;
+        top: 145px;
+        width: 20px;
+        height: 14px;
+        position: absolute;
+    }
+
+    a.trailer {
+        position: absolute;
+        left: 32px;
+        top: 176px;
+        font-size: 9px;
+    }
+
+    .imdb_score {
+        left: 88%;
+        width: 40px;
+        height: 40px;
+        line-height: 38px;
+        font-size: 15px;
+    }
+
+    .imdb_icon {
+        left: 88.5%;
+        top: 59px;
+        width: 35px;
+        height: 23px;
+        position: absolute;
+    }
+
+    .livre {
+        left: 217px;
+        top: 165px;
+        width: 30px;
+        height: 30px;
+        line-height: 26px;
+        font-size: 15px;
+    }
+
+    .nav>li {
+        width: 12.5%;
+        height: 80%;
+    }
+
+    .nav {
+        top: 8px;
+        width: 245px;
+        height: 55px;
+    }
+
+    h3 {
+        font-size: 15px;
+        margin-top: 0px;
+    }
+
+    .tab-content>.active {
+        width: 95%
+    }
+
+    .nav-tabs>li.active>a,
+    .nav-tabs>li.active>a:focus,
+    .nav-tabs>li.active>a:hover {
+        height: 100%;
+    }
+
+    .hour {
+        line-height: 0px;
+        font-size: 9px;
+    }
+}
+
+/*resCarousel Css End*/
