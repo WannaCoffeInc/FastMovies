@@ -7,7 +7,7 @@ body {
 
 .topnav {
   overflow: hidden;
-  background-color: #33383b;
+  background-color: #292c2f;
 }
 
 .topnav a {
@@ -41,7 +41,7 @@ body {
   float: right;
   padding: 6px 10px;
   margin-top: 12px;
-  height: 33px;
+  height: 36.2px;
   margin-right: 16px;
   background: #ddd;
   font-size: 17px;
