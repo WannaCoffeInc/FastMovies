@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <!-- Navbar -->
+<!-- Navbar -->
     <div class="topnav">
         <a class="active" href="./index.html">Home</a>
         <a href="./about.html">About</a>
@@ -32,7 +32,16 @@
         </div>
     </div>
     <!-- Navbar -->
+  <div class="container" style="width: 100%; margin: 0; padding: 0;">
 
+    <div class="col-md-12 divCartaz">
+        <p style="margin: auto;">
+            <i class="fas fa-star"></i> Destaque da Semana
+        </p>
+    </div>
+
+</div>  
+    
 <!--Destaques-->
 <div class="grid_container">
     <div class="poster_destaque">
@@ -54,8 +63,17 @@
 <br>
 
 <!--home-->
-<div class="container p8" id="divContainer">
-    <!-- <h4>data-items="2-3-4-5" data-slide="5" data-speed="900" data-interval="4000" data-load="3" data-animator="lazy"</h4> -->
+<div class="container" style="width: 100%; margin: 0; padding: 0;">
+
+    <div class="col-md-12 divCartaz">
+        <p style="margin: auto;">
+            <i class="fas fa-film"></i> Em Cartaz
+        </p>
+    </div>
+
+</div>
+
+<div class="container p8" id="divContainer" style="margin-top: 30px;">
 
 <!-- ************************************** INÍCIO CARROSSEL "EM CARTAZ" ************************************** -->
     <div class="resCarousel" data-items="2-3-4-5" data-slide="2" data-speed="900">
@@ -64,12 +82,12 @@
             <!-- Cada filme é inserido aqui pelo arquivo js/appendCarousel.js -->
 
         </div>
-        <button class='btn btn-default leftRs'></button>
-        <button class='btn btn-default rightRs'></button>
+        <button class='btn btn-default leftRs'><span class="glyphicon glyphicon-chevron-left"></span></button>
+        <button class='btn btn-default rightRs'><span class="glyphicon glyphicon-chevron-right"></span></button>
     </div>
-<!-- ************************************** FIM CARROSSEL "EM CARTAZ" ************************************** -->
+    <!-- ************************************** FIM CARROSSEL "EM CARTAZ" ************************************** -->
 
-<!-- ************************************** INÍCIO COLLAPSES DO CARROSSEL "EM CARTAZ" ********************** -->
+    <!-- ************************************** INÍCIO COLLAPSES DO CARROSSEL "EM CARTAZ" ********************** -->
 
     <!-- ********** INÍCIO COLLAPSE 1 ********** -->
     <div class="collapse multi-collapse" id="collapseExample1">
@@ -86,7 +104,7 @@
                 <img class="icon imdb_icon" src="css/imdb.png">
             </div>
             <div class="itemSessoes col-md-6">
-                <ul class="nav nav-tabs">
+                <ul class="nav nav-tabs" style="border: none;">
                     <li class="active"><a data-toggle="tab" href="#home"><p class="hour">Dom</p><p class="hour">25/11</p></a></li>
                     <li><a data-toggle="tab" href="#menu1"><p class="hour">Seg</p><p class="hour">26/11</p></a></li>
                     <li><a data-toggle="tab" href="#menu2"><p class="hour">Ter</p><p class="hour">27/11</p></a></li>
@@ -98,22 +116,22 @@
                 </ul>
 
                 <div class="tab-content horarios">
-                    <div id="home" class="tab-pane fade in active">
+                    <div id="home1" class="tab-pane fade in active">
                         <h3><font color="#ffffff">Domingo</font></h3>
                         <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
-                        <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f3D"><span class="label f3D">3D</span></span>&emsp;18:40 &emsp; 21:10</font></p><br>
+                        <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span>&emsp;18:40 &emsp; 21:10</font></p><br>
                         <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
                         <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span>&emsp; 19:50 &emsp; 22:00</font></p>
                     </div>
                     <div id="menu1" class="tab-pane fade">
                         <h3><font color="#ffffff">Segunda</font></h3>
                         <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
-                        <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f3D">3D</span>&emsp; 18:40 &emsp; 21:10</font></p><br>
+                        <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span>&emsp;18:40 &emsp; 21:10</font></p><br>
                         <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
                         <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span>&emsp; 19:50 &emsp; 22:00</font></p>
                     </div>
                     <div id="menu2" class="tab-pane fade">
-                        <h3><font color="#ffffff">Terça</font></h3>
+                        <h3><font color="#ffffff">Terça</font></h3>                       
                         <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
                         <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span>&emsp;18:40 &emsp; 21:10</font></p><br>
                         <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
@@ -252,12 +270,12 @@
 
     <!-- ********** INÍCIO COLLAPSE 3 ********** -->
     <div class="collapse multi-collapse" id="collapseExample3">
-        <div class="card card-body movie_poster" style="background: url('moviePosters/danny-devito-as-dorgle-in-small-foot-2018-qi.jpg') top no-repeat; background-size: 100% auto; object-fit: contain;">
+        <div class="card card-body movie_poster" style="background: url('moviePosters/Hd-Smallfoot-Poster-1136x640.jpg') top no-repeat; background-size: 100% auto; object-fit: contain;">
             <div class="itemSinopse col-md-6">
                 <p id="title">PÉ PEQUENO</p>
                 <p id="info">Animação | Comédia</p>
                 <p id="info_title">Sinopse</p>
-                <p id="info_sinop">Uma aventura de animação para todas as idades, com música original e um elenco de estrelas, Pé Pequeno vira a lenda do Pé Grande de cabeça para baixo quando um jovem e genial Yeti encontra algo que ele achava que não existia – um humano.</p>
+                <p id="info_sinop">Uma aventura de animação para todas as idades, com música original e um elenco de estrelas, Pé Pequeno vira a lenda do Pé Grande de cabeça para baixo quando um jovem e genial Yeti encontra algo que ele achava que não existia  um humano.</p>
                 <img class="icon yt_icon" src="css/yt_icon.png">
                 <a class="trailer" href="#">Trailer</a>
                 <div class = "circle imdb_score">6.8</div>
@@ -360,32 +378,32 @@
             </div>
             <div class="itemSessoes col-md-6">
                 <ul class="nav nav-tabs">
-                    <li class="active"><a data-toggle="tab" href="#home"><p class="hour">Dom</p><p class="hour">25/11</p></a></li>
-                    <li><a data-toggle="tab" href="#menu1"><p class="hour">Seg</p><p class="hour">26/11</p></a></li>
-                    <li><a data-toggle="tab" href="#menu2"><p class="hour">Ter</p><p class="hour">27/11</p></a></li>
-                    <li><a data-toggle="tab" href="#menu3"><p class="hour">Qua</p><p class="hour">28/11</p></a></li>
-                    <li><a data-toggle="tab" href="#menu4"><p class="hour">Qui</p><p class="hour">29/11</p></a></li>
-                    <li><a data-toggle="tab" href="#menu5"><p class="hour">Sex</p><p class="hour">30/11</p></a></li>
-                    <li><a data-toggle="tab" href="#menu6"><p class="hour">Sab</p><p class="hour">01/12</p></a></li>
-                    <li><a data-toggle="tab" href="#menu7"><p class="hour">Dom</p><p class="hour">02/12</p></a></li>
+                    <li class="active"><a data-toggle="tab" href="#home4"><p class="hour">Dom</p><p class="hour">25/11</p></a></li>
+                    <li><a data-toggle="tab" href="#menu22"><p class="hour">Seg</p><p class="hour">26/11</p></a></li>
+                    <li><a data-toggle="tab" href="#menu23"><p class="hour">Ter</p><p class="hour">27/11</p></a></li>
+                    <li><a data-toggle="tab" href="#menu24"><p class="hour">Qua</p><p class="hour">28/11</p></a></li>
+                    <li><a data-toggle="tab" href="#menu25"><p class="hour">Qui</p><p class="hour">29/11</p></a></li>
+                    <li><a data-toggle="tab" href="#menu26"><p class="hour">Sex</p><p class="hour">30/11</p></a></li>
+                    <li><a data-toggle="tab" href="#menu27"><p class="hour">Sab</p><p class="hour">01/12</p></a></li>
+                    <li><a data-toggle="tab" href="#menu28"><p class="hour">Dom</p><p class="hour">02/12</p></a></li>
                 </ul>
 
                 <div class="tab-content horarios">
-                    <div id="home" class="tab-pane fade in active">
+                    <div id="home4" class="tab-pane fade in active">
                         <h3><font color="#ffffff">Domingo</font></h3>
                         <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
                         <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span>&emsp;18:40 &emsp; 21:10</font></p><br>
                         <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
                         <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span>&emsp; 19:50 &emsp; 22:00</font></p>
                     </div>
-                    <div id="menu1" class="tab-pane fade">
+                    <div id="menu22" class="tab-pane fade">
                         <h3><font color="#ffffff">Segunda</font></h3>
                         <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
                         <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span>&emsp;18:40 &emsp; 21:10</font></p><br>
                         <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
                         <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span>&emsp; 19:50 &emsp; 22:00</font></p>
                     </div>
-                    <div id="menu2" class="tab-pane fade">
+                    <div id="menu23" class="tab-pane fade">
                         <h3><font color="#ffffff">Terça</font></h3>
                         <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
                         <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span>&emsp;18:40 &emsp; 21:10</font></p><br>
@@ -393,14 +411,14 @@
                         <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
                         <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp; 19:50&emsp; 22:00</font></p>
                     </div>
-                    <div id="menu3" class="tab-pane fade">
-                        <h3><font color="#ffffff">Quarta</font></h3>
+                    <div id="menu24" class="tab-pane fade">
+                        <h3><font color="#ffffff">Quarta</font></h3>                        
                         <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
                         <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span> &emsp; 13:40 &emsp;16:10 &emsp; 18:40</font></p><br>
                         <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
                         <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp; 21:50 &emsp; 22:30</font></p>
                     </div>
-                    <div id="menu4" class="tab-pane fade">
+                    <div id="menu25" class="tab-pane fade">
                         <h3><font color="#ffffff">Quinta</font></h3>
                         <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
                         <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span> &emsp; 13:40  &emsp; 16:10 &emsp;   18:40</font></p><br>
@@ -408,7 +426,7 @@
                         <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
                         <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp; 21:50 &emsp; 22:30</font></p>
                     </div>
-                    <div id="menu5" class="tab-pane fade">
+                    <div id="menu26" class="tab-pane fade">
                         <h3><font color="#ffffff">Sexta</font></h3>
                         <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
                         <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span>&emsp;13:40 &emsp;  16:10  &emsp; 18:40</font></p><br>
@@ -416,7 +434,7 @@
                         <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
                         <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp;21:50 &emsp; 22:30</font></p>
                     </div>
-                    <div id="menu6" class="tab-pane fade">
+                    <div id="menu27" class="tab-pane fade">
                         <h3><font color="#ffffff">Sábado</font></h3>
 
                         <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
@@ -425,7 +443,7 @@
                         <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
                         <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp; 21:50 &emsp; 22:30</font></p>
                     </div>
-                    <div id="menu7" class="tab-pane fade">
+                    <div id="menu28" class="tab-pane fade">
                         <h3><font color="#ffffff">Sábado</font></h3>
 
                         <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
@@ -456,18 +474,18 @@
             </div>
             <div class="itemSessoes col-md-6">
                 <ul class="nav nav-tabs">
-                    <li class="active"><a data-toggle="tab" href="#home"><p class="hour">Dom</p><p class="hour">25/11</p></a></li>
-                    <li><a data-toggle="tab" href="#menu1"><p class="hour">Seg</p><p class="hour">26/11</p></a></li>
-                    <li><a data-toggle="tab" href="#menu2"><p class="hour">Ter</p><p class="hour">27/11</p></a></li>
-                    <li><a data-toggle="tab" href="#menu3"><p class="hour">Qua</p><p class="hour">28/11</p></a></li>
-                    <li><a data-toggle="tab" href="#menu4"><p class="hour">Qui</p><p class="hour">29/11</p></a></li>
-                    <li><a data-toggle="tab" href="#menu5"><p class="hour">Sex</p><p class="hour">30/11</p></a></li>
-                    <li><a data-toggle="tab" href="#menu6"><p class="hour">Sab</p><p class="hour">01/12</p></a></li>
-                    <li><a data-toggle="tab" href="#menu7"><p class="hour">Dom</p><p class="hour">02/12</p></a></li>
+                    <li class="active"><a data-toggle="tab" href="#home5"><p class="hour">Dom</p><p class="hour">25/11</p></a></li>
+                    <li><a data-toggle="tab" href="#menu29"><p class="hour">Seg</p><p class="hour">26/11</p></a></li>
+                    <li><a data-toggle="tab" href="#menu30"><p class="hour">Ter</p><p class="hour">27/11</p></a></li>
+                    <li><a data-toggle="tab" href="#menu31"><p class="hour">Qua</p><p class="hour">28/11</p></a></li>
+                    <li><a data-toggle="tab" href="#menu32"><p class="hour">Qui</p><p class="hour">29/11</p></a></li>
+                    <li><a data-toggle="tab" href="#menu33"><p class="hour">Sex</p><p class="hour">30/11</p></a></li>
+                    <li><a data-toggle="tab" href="#menu34"><p class="hour">Sab</p><p class="hour">01/12</p></a></li>
+                    <li><a data-toggle="tab" href="#menu35"><p class="hour">Dom</p><p class="hour">02/12</p></a></li>
                 </ul>
 
                 <div class="tab-content horarios">
-                    <div id="home" class="tab-pane fade in active">
+                    <div id="home5" class="tab-pane fade in active">
                         <h3><font color="#ffffff">Domingo</font></h3>
 
                         <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
@@ -476,7 +494,7 @@
                         <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
                         <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span>&emsp; 19:50 &emsp; 22:00</font></p>
                     </div>
-                    <div id="menu1" class="tab-pane fade">
+                    <div id="menu29" class="tab-pane fade">
                         <h3><font color="#ffffff">Segunda</font></h3>
 
                         <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
@@ -485,7 +503,7 @@
                         <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
                         <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span>&emsp; 19:50 &emsp; 22:00</font></p>
                     </div>
-                    <div id="menu2" class="tab-pane fade">
+                    <div id="menu30" class="tab-pane fade">
                         <h3><font color="#ffffff">Terça</font></h3>
 
                         <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
@@ -494,7 +512,7 @@
                         <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
                         <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp; 19:50&emsp; 22:00</font></p>
                     </div>
-                    <div id="menu3" class="tab-pane fade">
+                    <div id="menu31" class="tab-pane fade">
                         <h3><font color="#ffffff">Quarta</font></h3>
 
                         <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
@@ -503,7 +521,7 @@
                         <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
                         <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp; 21:50 &emsp; 22:30</font></p>
                     </div>
-                    <div id="menu4" class="tab-pane fade">
+                    <div id="menu32" class="tab-pane fade">
                         <h3><font color="#ffffff">Quinta</font></h3>
 
                         <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
@@ -512,7 +530,7 @@
                         <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
                         <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp; 21:50 &emsp; 22:30</font></p>
                     </div>
-                    <div id="menu5" class="tab-pane fade">
+                    <div id="menu33" class="tab-pane fade">
                         <h3><font color="#ffffff">Sexta</font></h3>
 
                         <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
@@ -521,7 +539,7 @@
                         <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
                         <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp;21:50 &emsp; 22:30</font></p>
                     </div>
-                    <div id="menu6" class="tab-pane fade">
+                    <div id="menu34" class="tab-pane fade">
                         <h3><font color="#ffffff">Sábado</font></h3>
 
                         <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
@@ -530,7 +548,7 @@
                         <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
                         <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp; 21:50 &emsp; 22:30</font></p>
                     </div>
-                    <div id="menu7" class="tab-pane fade">
+                    <div id="menu35" class="tab-pane fade">
                         <h3><font color="#ffffff">Sábado</font></h3>
 
                         <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
@@ -551,18 +569,18 @@
             <div class="itemSinopse col-md-6"></div>
             <div class="itemSessoes col-md-6">
                 <ul class="nav nav-tabs">
-                    <li class="active"><a data-toggle="tab" href="#home"><p class="hour">Dom</p><p class="hour">25/11</p></a></li>
-                    <li><a data-toggle="tab" href="#menu1"><p class="hour">Seg</p><p class="hour">26/11</p></a></li>
-                    <li><a data-toggle="tab" href="#menu2"><p class="hour">Ter</p><p class="hour">27/11</p></a></li>
-                    <li><a data-toggle="tab" href="#menu3"><p class="hour">Qua</p><p class="hour">28/11</p></a></li>
-                    <li><a data-toggle="tab" href="#menu4"><p class="hour">Qui</p><p class="hour">29/11</p></a></li>
-                    <li><a data-toggle="tab" href="#menu5"><p class="hour">Sex</p><p class="hour">30/11</p></a></li>
-                    <li><a data-toggle="tab" href="#menu6"><p class="hour">Sab</p><p class="hour">01/12</p></a></li>
-                    <li><a data-toggle="tab" href="#menu7"><p class="hour">Dom</p><p class="hour">02/12</p></a></li>
+                    <li class="active"><a data-toggle="tab" href="#home6"><p class="hour">Dom</p><p class="hour">25/11</p></a></li>
+                    <li><a data-toggle="tab" href="#menu36"><p class="hour">Seg</p><p class="hour">26/11</p></a></li>
+                    <li><a data-toggle="tab" href="#menu37"><p class="hour">Ter</p><p class="hour">27/11</p></a></li>
+                    <li><a data-toggle="tab" href="#menu38"><p class="hour">Qua</p><p class="hour">28/11</p></a></li>
+                    <li><a data-toggle="tab" href="#menu39"><p class="hour">Qui</p><p class="hour">29/11</p></a></li>
+                    <li><a data-toggle="tab" href="#menu40"><p class="hour">Sex</p><p class="hour">30/11</p></a></li>
+                    <li><a data-toggle="tab" href="#menu41"><p class="hour">Sab</p><p class="hour">01/12</p></a></li>
+                    <li><a data-toggle="tab" href="#menu42"><p class="hour">Dom</p><p class="hour">02/12</p></a></li>
                 </ul>
 
                 <div class="tab-content horarios">
-                    <div id="home" class="tab-pane fade in active">
+                    <div id="home6" class="tab-pane fade in active">
                         <h3><font color="#ffffff">Domingo</font></h3>
 
                         <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
@@ -571,7 +589,7 @@
                         <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
                         <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span>&emsp; 19:50 &emsp; 22:00</font></p>
                     </div>
-                    <div id="menu1" class="tab-pane fade">
+                    <div id="menu36" class="tab-pane fade">
                         <h3><font color="#ffffff">Segunda</font></h3>
 
                         <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
@@ -580,7 +598,7 @@
                         <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
                         <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span>&emsp; 19:50 &emsp; 22:00</font></p>
                     </div>
-                    <div id="menu2" class="tab-pane fade">
+                    <div id="menu37" class="tab-pane fade">
                         <h3><font color="#ffffff">Terça</font></h3>
 
                         <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
@@ -589,7 +607,7 @@
                         <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
                         <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp; 19:50&emsp; 22:00</font></p>
                     </div>
-                    <div id="menu3" class="tab-pane fade">
+                    <div id="menu38" class="tab-pane fade">
                         <h3><font color="#ffffff">Quarta</font></h3>
 
                         <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
@@ -598,7 +616,7 @@
                         <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
                         <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp; 21:50 &emsp; 22:30</font></p>
                     </div>
-                    <div id="menu4" class="tab-pane fade">
+                    <div id="menu39" class="tab-pane fade">
                         <h3><font color="#ffffff">Quinta</font></h3>
 
                         <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
@@ -607,7 +625,7 @@
                         <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
                         <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp; 21:50 &emsp; 22:30</font></p>
                     </div>
-                    <div id="menu5" class="tab-pane fade">
+                    <div id="menu40" class="tab-pane fade">
                         <h3><font color="#ffffff">Sexta</font></h3>
 
                         <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
@@ -616,7 +634,7 @@
                         <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
                         <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp;21:50 &emsp; 22:30</font></p>
                     </div>
-                    <div id="menu6" class="tab-pane fade">
+                    <div id="menu41" class="tab-pane fade">
                         <h3><font color="#ffffff">Sábado</font></h3>
 
                         <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
@@ -625,7 +643,7 @@
                         <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
                         <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp; 21:50 &emsp; 22:30</font></p>
                     </div>
-                    <div id="menu7" class="tab-pane fade">
+                    <div id="menu42" class="tab-pane fade">
                         <h3><font color="#ffffff">Sábado</font></h3>
 
                         <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
@@ -644,7 +662,93 @@
     <div class="collapse multi-collapse" id="collapseExample7">
         <div class="card card-body movie_poster" style="background: url('moviePosters/venom-movie-2018-official-poster-ue.jpg') center no-repeat; background-size: 100% auto; object-fit: contain;">
             <div class="itemSinopse"></div>
-            <div class="itemSessoes"></div>
+            <div class="itemSessoes">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#home6"><p class="hour">Dom</p><p class="hour">25/11</p></a></li>
+                    <li><a data-toggle="tab" href="#menu36"><p class="hour">Seg</p><p class="hour">26/11</p></a></li>
+                    <li><a data-toggle="tab" href="#menu37"><p class="hour">Ter</p><p class="hour">27/11</p></a></li>
+                    <li><a data-toggle="tab" href="#menu38"><p class="hour">Qua</p><p class="hour">28/11</p></a></li>
+                    <li><a data-toggle="tab" href="#menu39"><p class="hour">Qui</p><p class="hour">29/11</p></a></li>
+                    <li><a data-toggle="tab" href="#menu40"><p class="hour">Sex</p><p class="hour">30/11</p></a></li>
+                    <li><a data-toggle="tab" href="#menu41"><p class="hour">Sab</p><p class="hour">01/12</p></a></li>
+                    <li><a data-toggle="tab" href="#menu42"><p class="hour">Dom</p><p class="hour">02/12</p></a></li>
+                </ul>
+
+                <div class="tab-content horarios">
+                    <div id="home6" class="tab-pane fade in active">
+                        <h3><font color="#ffffff">Domingo</font></h3>
+
+                        <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
+                        <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span>&emsp;18:40 &emsp; 21:10</font></p><br>
+
+                        <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
+                        <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span>&emsp; 19:50 &emsp; 22:00</font></p>
+                    </div>
+                    <div id="menu36" class="tab-pane fade">
+                        <h3><font color="#ffffff">Segunda</font></h3>
+
+                        <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
+                        <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span>&emsp;18:40 &emsp; 21:10</font></p><br>
+
+                        <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
+                        <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span>&emsp; 19:50 &emsp; 22:00</font></p>
+                    </div>
+                    <div id="menu37" class="tab-pane fade">
+                        <h3><font color="#ffffff">Terça</font></h3>
+
+                        <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
+                        <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span>&emsp;18:40 &emsp; 21:10</font></p><br>
+
+                        <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
+                        <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp; 19:50&emsp; 22:00</font></p>
+                    </div>
+                    <div id="menu38" class="tab-pane fade">
+                        <h3><font color="#ffffff">Quarta</font></h3>
+
+                        <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
+                        <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span> &emsp; 13:40 &emsp;16:10 &emsp; 18:40</font></p><br>
+
+                        <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
+                        <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp; 21:50 &emsp; 22:30</font></p>
+                    </div>
+                    <div id="menu39" class="tab-pane fade">
+                        <h3><font color="#ffffff">Quinta</font></h3>
+
+                        <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
+                        <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span> &emsp; 13:40  &emsp; 16:10 &emsp;   18:40</font></p><br>
+
+                        <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
+                        <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp; 21:50 &emsp; 22:30</font></p>
+                    </div>
+                    <div id="menu40" class="tab-pane fade">
+                        <h3><font color="#ffffff">Sexta</font></h3>
+
+                        <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
+                        <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span>&emsp;13:40 &emsp;  16:10  &emsp; 18:40</font></p><br>
+
+                        <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
+                        <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp;21:50 &emsp; 22:30</font></p>
+                    </div>
+                    <div id="menu41" class="tab-pane fade">
+                        <h3><font color="#ffffff">Sábado</font></h3>
+
+                        <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
+                        <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span> &emsp; 13:40 &emsp; 16:10 &emsp; 18:40</font></p><br>
+
+                        <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
+                        <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp; 21:50 &emsp; 22:30</font></p>
+                    </div>
+                    <div id="menu42" class="tab-pane fade">
+                        <h3><font color="#ffffff">Sábado</font></h3>
+
+                        <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
+                        <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span> &emsp; 13:40 &emsp; 16:10 &emsp; 18:40</font></p><br>
+
+                        <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
+                        <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp; 21:50 &emsp; 22:30</font></p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- ********** FIM COLLAPSE 7 ********** -->
@@ -653,16 +757,188 @@
     <div class="collapse multi-collapse" id="collapseExample8">
         <div class="card card-body movie_poster" style="background: url('moviePosters/maxresdefault (1).jpg') center no-repeat; background-size: 100% auto; object-fit: contain;">
             <div class="itemSinopse"></div>
-            <div class="itemSessoes"></div>
+            <div class="itemSessoes">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#home6"><p class="hour">Dom</p><p class="hour">25/11</p></a></li>
+                    <li><a data-toggle="tab" href="#menu36"><p class="hour">Seg</p><p class="hour">26/11</p></a></li>
+                    <li><a data-toggle="tab" href="#menu37"><p class="hour">Ter</p><p class="hour">27/11</p></a></li>
+                    <li><a data-toggle="tab" href="#menu38"><p class="hour">Qua</p><p class="hour">28/11</p></a></li>
+                    <li><a data-toggle="tab" href="#menu39"><p class="hour">Qui</p><p class="hour">29/11</p></a></li>
+                    <li><a data-toggle="tab" href="#menu40"><p class="hour">Sex</p><p class="hour">30/11</p></a></li>
+                    <li><a data-toggle="tab" href="#menu41"><p class="hour">Sab</p><p class="hour">01/12</p></a></li>
+                    <li><a data-toggle="tab" href="#menu42"><p class="hour">Dom</p><p class="hour">02/12</p></a></li>
+                </ul>
+
+                <div class="tab-content horarios">
+                    <div id="home6" class="tab-pane fade in active">
+                        <h3><font color="#ffffff">Domingo</font></h3>
+
+                        <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
+                        <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span>&emsp;18:40 &emsp; 21:10</font></p><br>
+
+                        <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
+                        <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span>&emsp; 19:50 &emsp; 22:00</font></p>
+                    </div>
+                    <div id="menu36" class="tab-pane fade">
+                        <h3><font color="#ffffff">Segunda</font></h3>
+
+                        <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
+                        <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span>&emsp;18:40 &emsp; 21:10</font></p><br>
+
+                        <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
+                        <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span>&emsp; 19:50 &emsp; 22:00</font></p>
+                    </div>
+                    <div id="menu37" class="tab-pane fade">
+                        <h3><font color="#ffffff">Terça</font></h3>
+
+                        <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
+                        <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span>&emsp;18:40 &emsp; 21:10</font></p><br>
+
+                        <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
+                        <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp; 19:50&emsp; 22:00</font></p>
+                    </div>
+                    <div id="menu38" class="tab-pane fade">
+                        <h3><font color="#ffffff">Quarta</font></h3>
+
+                        <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
+                        <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span> &emsp; 13:40 &emsp;16:10 &emsp; 18:40</font></p><br>
+
+                        <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
+                        <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp; 21:50 &emsp; 22:30</font></p>
+                    </div>
+                    <div id="menu39" class="tab-pane fade">
+                        <h3><font color="#ffffff">Quinta</font></h3>
+
+                        <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
+                        <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span> &emsp; 13:40  &emsp; 16:10 &emsp;   18:40</font></p><br>
+
+                        <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
+                        <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp; 21:50 &emsp; 22:30</font></p>
+                    </div>
+                    <div id="menu40" class="tab-pane fade">
+                        <h3><font color="#ffffff">Sexta</font></h3>
+
+                        <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
+                        <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span>&emsp;13:40 &emsp;  16:10  &emsp; 18:40</font></p><br>
+
+                        <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
+                        <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp;21:50 &emsp; 22:30</font></p>
+                    </div>
+                    <div id="menu41" class="tab-pane fade">
+                        <h3><font color="#ffffff">Sábado</font></h3>
+
+                        <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
+                        <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span> &emsp; 13:40 &emsp; 16:10 &emsp; 18:40</font></p><br>
+
+                        <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
+                        <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp; 21:50 &emsp; 22:30</font></p>
+                    </div>
+                    <div id="menu42" class="tab-pane fade">
+                        <h3><font color="#ffffff">Sábado</font></h3>
+
+                        <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
+                        <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span> &emsp; 13:40 &emsp; 16:10 &emsp; 18:40</font></p><br>
+
+                        <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
+                        <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp; 21:50 &emsp; 22:30</font></p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- ********** FIM COLLAPSE 8 ********** -->
 
     <!-- ********** INÍCIO COLLAPSE 9 ********** -->
-   <div class="collapse multi-collapse" id="collapseExample9">
+    <div class="collapse multi-collapse" id="collapseExample9">
         <div class="card card-body movie_poster" style="background: url('moviePosters/legiao_KUaGIRjHeL6Csb8lgydpkoi_qESZFf2zV09Jc5nvPx.jpg.jpeg') top no-repeat; background-size: 100% auto; object-fit: contain;">
             <div class="itemSinopse"></div>
-            <div class="itemSessoes"></div>
+            <div class="itemSessoes">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#home7"><p class="hour">Dom</p><p class="hour">25/11</p></a></li>
+                    <li><a data-toggle="tab" href="#menu43"><p class="hour">Seg</p><p class="hour">26/11</p></a></li>
+                    <li><a data-toggle="tab" href="#menu44"><p class="hour">Ter</p><p class="hour">27/11</p></a></li>
+                    <li><a data-toggle="tab" href="#menu45"><p class="hour">Qua</p><p class="hour">28/11</p></a></li>
+                    <li><a data-toggle="tab" href="#menu46"><p class="hour">Qui</p><p class="hour">29/11</p></a></li>
+                    <li><a data-toggle="tab" href="#menu47"><p class="hour">Sex</p><p class="hour">30/11</p></a></li>
+                    <li><a data-toggle="tab" href="#menu48"><p class="hour">Sab</p><p class="hour">01/12</p></a></li>
+                    <li><a data-toggle="tab" href="#menu49"><p class="hour">Dom</p><p class="hour">02/12</p></a></li>
+                </ul>
+
+                <div class="tab-content horarios">
+                    <div id="home7" class="tab-pane fade in active">
+                        <h3><font color="#ffffff">Domingo</font></h3>
+
+                        <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
+                        <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span>&emsp;18:40 &emsp; 21:10</font></p><br>
+
+                        <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
+                        <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span>&emsp; 19:50 &emsp; 22:00</font></p>
+                    </div>
+                    <div id="menu43" class="tab-pane fade">
+                        <h3><font color="#ffffff">Segunda</font></h3>
+
+                        <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
+                        <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span>&emsp;18:40 &emsp; 21:10</font></p><br>
+
+                        <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
+                        <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span>&emsp; 19:50 &emsp; 22:00</font></p>
+                    </div>
+                    <div id="menu44" class="tab-pane fade">
+                        <h3><font color="#ffffff">Terça</font></h3>
+
+                        <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
+                        <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span>&emsp;18:40 &emsp; 21:10</font></p><br>
+
+                        <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
+                        <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp; 19:50&emsp; 22:00</font></p>
+                    </div>
+                    <div id="menu45" class="tab-pane fade">
+                        <h3><font color="#ffffff">Quarta</font></h3>
+
+                        <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
+                        <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span> &emsp; 13:40 &emsp;16:10 &emsp; 18:40</font></p><br>
+
+                        <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
+                        <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp; 21:50 &emsp; 22:30</font></p>
+                    </div>
+                    <div id="menu46" class="tab-pane fade">
+                        <h3><font color="#ffffff">Quinta</font></h3>
+
+                        <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
+                        <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span> &emsp; 13:40  &emsp; 16:10 &emsp;   18:40</font></p><br>
+
+                        <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
+                        <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp; 21:50 &emsp; 22:30</font></p>
+                    </div>
+                    <div id="menu47" class="tab-pane fade">
+                        <h3><font color="#ffffff">Sexta</font></h3>
+
+                        <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
+                        <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span>&emsp;13:40 &emsp;  16:10  &emsp; 18:40</font></p><br>
+
+                        <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
+                        <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp;21:50 &emsp; 22:30</font></p>
+                    </div>
+                    <div id="menu48" class="tab-pane fade">
+                        <h3><font color="#ffffff">Sábado</font></h3>
+
+                        <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
+                        <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span> &emsp; 13:40 &emsp; 16:10 &emsp; 18:40</font></p><br>
+
+                        <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
+                        <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp; 21:50 &emsp; 22:30</font></p>
+                    </div>
+                    <div id="menu49" class="tab-pane fade">
+                        <h3><font color="#ffffff">Sábado</font></h3>
+
+                        <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
+                        <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span> &emsp; 13:40 &emsp; 16:10 &emsp; 18:40</font></p><br>
+
+                        <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
+                        <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp; 21:50 &emsp; 22:30</font></p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- ********** FIM COLLAPSE 9 ********** -->
@@ -671,18 +947,305 @@
     <div class="collapse multi-collapse" id="collapseExample10">
         <div class="card card-body movie_poster" style="background: url('moviePosters/a_star_is_born_2018_movie_4k.jpg') bottom no-repeat; background-size: 100% auto; object-fit: contain;">
             <div class="itemSinopse"></div>
-            <div class="itemSessoes"></div>
+            <div class="itemSessoes">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#home8"><p class="hour">Dom</p><p class="hour">25/11</p></a></li>
+                    <li><a data-toggle="tab" href="#menu50"><p class="hour">Seg</p><p class="hour">26/11</p></a></li>
+                    <li><a data-toggle="tab" href="#menu51"><p class="hour">Ter</p><p class="hour">27/11</p></a></li>
+                    <li><a data-toggle="tab" href="#menu52"><p class="hour">Qua</p><p class="hour">28/11</p></a></li>
+                    <li><a data-toggle="tab" href="#menu53"><p class="hour">Qui</p><p class="hour">29/11</p></a></li>
+                    <li><a data-toggle="tab" href="#menu54"><p class="hour">Sex</p><p class="hour">30/11</p></a></li>
+                    <li><a data-toggle="tab" href="#menu55"><p class="hour">Sab</p><p class="hour">01/12</p></a></li>
+                    <li><a data-toggle="tab" href="#menu56"><p class="hour">Dom</p><p class="hour">02/12</p></a></li>
+                </ul>
+
+                <div class="tab-content horarios">
+                    <div id="home8" class="tab-pane fade in active">
+                        <h3><font color="#ffffff">Domingo</font></h3>
+
+                        <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
+                        <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span>&emsp;18:40 &emsp; 21:10</font></p><br>
+
+                        <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
+                        <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span>&emsp; 19:50 &emsp; 22:00</font></p>
+                    </div>
+                    <div id="menu50" class="tab-pane fade">
+                        <h3><font color="#ffffff">Segunda</font></h3>
+
+                        <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
+                        <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span>&emsp;18:40 &emsp; 21:10</font></p><br>
+
+                        <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
+                        <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span>&emsp; 19:50 &emsp; 22:00</font></p>
+                    </div>
+                    <div id="menu51" class="tab-pane fade">
+                        <h3><font color="#ffffff">Terça</font></h3>
+
+                        <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
+                        <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span>&emsp;18:40 &emsp; 21:10</font></p><br>
+
+                        <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
+                        <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp; 19:50&emsp; 22:00</font></p>
+                    </div>
+                    <div id="menu52" class="tab-pane fade">
+                        <h3><font color="#ffffff">Quarta</font></h3>
+
+                        <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
+                        <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span> &emsp; 13:40 &emsp;16:10 &emsp; 18:40</font></p><br>
+
+                        <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
+                        <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp; 21:50 &emsp; 22:30</font></p>
+                    </div>
+                    <div id="menu53" class="tab-pane fade">
+                        <h3><font color="#ffffff">Quinta</font></h3>
+
+                        <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
+                        <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span> &emsp; 13:40  &emsp; 16:10 &emsp;   18:40</font></p><br>
+
+                        <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
+                        <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp; 21:50 &emsp; 22:30</font></p>
+                    </div>
+                    <div id="menu54" class="tab-pane fade">
+                        <h3><font color="#ffffff">Sexta</font></h3>
+
+                        <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
+                        <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span>&emsp;13:40 &emsp;  16:10  &emsp; 18:40</font></p><br>
+
+                        <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
+                        <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp;21:50 &emsp; 22:30</font></p>
+                    </div>
+                    <div id="menu55" class="tab-pane fade">
+                        <h3><font color="#ffffff">Sábado</font></h3>
+
+                        <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
+                        <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span> &emsp; 13:40 &emsp; 16:10 &emsp; 18:40</font></p><br>
+
+                        <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
+                        <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp; 21:50 &emsp; 22:30</font></p>
+                    </div>
+                    <div id="menu56" class="tab-pane fade">
+                        <h3><font color="#ffffff">Sábado</font></h3>
+
+                        <p style="margin-top: 15px;"><span class="label dublado">Dublado</span></p>
+                        <p style="margin-top:15px;"><font color="#ffffff"><span class="label f3D">3D</span> &emsp; 13:40 &emsp; 16:10 &emsp; 18:40</font></p><br>
+
+                        <p style="margin-top:15px;"><span class="label legendado">Legendado</span></p>
+                        <p style="margin-top: 15px;"><font color="#ffffff"><span class="label f2D">2D</span> &emsp; 21:50 &emsp; 22:30</font></p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- ********** FIM COLLAPSE 10 ********** -->
-
-<!-- ************************************** FIM COLLAPSES DO CARROSSEL "EM CARTAZ" ********************** -->
-
+    <!-- ************************************** FIM COLLAPSES DO CARROSSEL "EM CARTAZ" ********************** -->
 </div>
 
+    <div class="container" style="width: 100%; margin-top: 50px; padding: 0;">
 
+        <div class="col-md-12 divCartaz">
+            <p style="margin: auto;">
+                <i class="fas fa-bolt"></i> Lançamentos
+            </p>
+        </div>
 
+    </div>
+
+    <div class="container p8" style="margin-top: 30px;">
+
+        <!-- ************************************** INÍCIO CARROSSEL "PRÓXIMOS LANÇAMENTOS" ********************* -->
+
+        <div class="resCarousel" data-items="2-3-4-5" data-slide="2" data-speed="900">
+            <div class="resCarousel-inner" id="eventLoad">
+
+                <div class="item">
+                    <div class="tile" style="background: url('moviePosters/grinch.jpg') center center no-repeat; background-size: 100% 100%; object-fit: contain;">
+                        <div>
+                            <span id = "movie_title">
+                                O Grinch
+                                <a class = "information" data-toggle="collapse" href="#collapseExample11" role="button">
+                                    <i class="fas fa-plus-circle fa-3x" style="color: yellow;"></i>
+                                </a>                                
+                            </span>                            
+                        </div>
+                    </div>
+                    <div class="triangulo"></div>
+                </div>
+
+                <div class="item">
+                    <div class="tile" style="background: url('moviePosters/quebraNozes.jpg') center center no-repeat; background-size: 100% 100%; object-fit: contain;">
+                        <div>
+                            <span id = "movie_title">
+                                O Quebra-Nozes e os Quatro Reinos
+                                <a class = "information" data-toggle="collapse" href="#collapseExample12" role="button">
+                                    <i class="fas fa-plus-circle fa-3x" style="color: yellow;"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="triangulo"></div>
+                </div>
+
+                <div class="item">
+                    <div class="tile" style="background: url('moviePosters/PePequeno.jpg') center center no-repeat; background-size: 100% 100%; object-fit: contain;">
+                        <div>
+                            <span id = "movie_title">
+                                Pé Pequeno
+                                <a class = "information" data-toggle="collapse" href="#collapseExample13" role="button">
+                                    <i class="fas fa-plus-circle fa-3x" style="color: yellow;"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="triangulo"></div>
+                </div>
+
+                <div class="item">
+                    <div class="tile" style="background: url('moviePosters/d58677de7d7f64d820bfa646a78d95df.jpg') center center no-repeat; background-size: 100% 100%; object-fit: contain;">
+                        <div>
+                            <span id = "movie_title">
+                                Bohemian Rhapsody
+                                <a class = "information" data-toggle="collapse" href="#collapseExample14" role="button">
+                                    <i class="fas fa-plus-circle fa-3x" style="color: yellow;"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="triangulo"></div>
+                </div>
+
+                <div class="item">
+                    <div class="tile" style="background: url('moviePosters/Halloween-2018-Poster-the-halloween-movies-41553252-1294-2048.png') center center no-repeat; background-size: 100% 100%; object-fit: contain;">
+                        <div>
+                            <span id = "movie_title">
+                                Halloween
+                                <a class = "information" data-toggle="collapse" href="#collapseExample15" role="button">
+                                    <i class="fas fa-plus-circle fa-3x" style="color: yellow;"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="triangulo"></div>
+                </div>
+
+                <div class="item">
+                    <div class="tile" style="background: url('moviePosters/MV5BMjI4Mj.jpg') center center no-repeat; background-size: 100% 100%; object-fit: contain;">
+                        <div>
+                            <span id = "movie_title">
+                                Jhonny English 3
+                                <a class = "information" data-toggle="collapse" href="#collapseExample16" role="button">
+                                    <i class="fas fa-plus-circle fa-3x" style="color: yellow;"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="triangulo"></div>
+                </div>
+
+                <div class="item">
+                    <div class="tile" style="background: url('moviePosters/venompostertransform.jpg') center center no-repeat; background-size: 100% 100%; object-fit: contain;">
+                        <div>
+                            <span id = "movie_title">
+                                Venom
+                                <a class = "information" data-toggle="collapse" href="#collapseExample17" role="button">
+                                    <i class="fas fa-plus-circle fa-3x" style="color: yellow;"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="triangulo"></div>
+                </div>
+
+                <div class="item">
+                    <div class="tile" style="background: url('moviePosters/5582578.jpg') center center no-repeat; background-size: 100% 100%; object-fit: contain;">
+                        <div>
+                            <span id = "movie_title">
+                                Tudo por um Popstar
+                                <a class = "information" data-toggle="collapse" href="#collapseExample18" role="button">
+                                    <i class="fas fa-plus-circle fa-3x" style="color: yellow;"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="triangulo"></div>
+                </div>
+
+                <div class="item">
+                    <div class="tile" style="background: url('moviePosters/MV5BMGU4YjQyMGQtM.jpg') center center no-repeat; background-size: 100% 100%; object-fit: contain;">
+                        <div>
+                            <span id = "movie_title">
+                                O Doutrinador
+                                <a class = "information" data-toggle="collapse" href="#collapseExample19" role="button">
+                                    <i class="fas fa-plus-circle fa-3x" style="color: yellow;"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="triangulo"></div>
+                </div>
+
+                <div class="item">
+                    <div class="tile" style="background: url('moviePosters/a-star-is-born-portuguese-movie-poster.jpg') center center no-repeat; background-size: 100% 100%; object-fit: contain;">
+                        <div>
+                            <span id = "movie_title">
+                                Assim Nasce um Estrela
+                                <a class = "information" data-toggle="collapse" href="#collapseExample20" role="button">
+                                    <i class="fas fa-plus-circle fa-3x" style="color: yellow;"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="triangulo"></div>
+                </div>
+            </div>
+            <button class='btn btn-default leftRs'><span class="glyphicon glyphicon-chevron-left"></span></button>
+            <button class='btn btn-default rightRs'><span class="glyphicon glyphicon-chevron-right"></span></button>
+        </div>
+
+        <!-- ************************************** FIM DO CARROSEL "PRÓXIMOS LANÇAMENTOS" ********************** -->
+
+        <!-- Return to Top -->
+        <a href="javascript:" id="return-to-top"><i><span class="glyphicon glyphicon-chevron-up"></i></a>
+
+            <!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
+            <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+            <link href="css/letreiro.scss" rel="stylesheet/scss" type="text/scss">
+            <!-- Test the scroll -->
+            <div style="height:2000px;">
+                <div class="logo">
+                </div>
+
+            </div>
+
+            <hr>
+
+<!--
+<div class="form-inline container">
+<div class="form-group">
+<label for="dItems">data-items:</label>
+<input type="text" class="form-control" id="dItems" value="1,2,3,4">
 </div>
+<div class="form-group">
+<label for="dSlide">data-slide:</label>
+<input type="text" class="form-control" id="dSlide" value="1">
+</div>
+<div class="form-group">
+<label for="dSpeed">data-speed:</label>
+<input type="text" class="form-control" id="dSpeed" value="600">
+</div>
+<div class="form-group">
+<label for="dInterval">data-interval:</label>
+<input type="text" class="form-control" id="dInterval" value="5000">
+</div>
+<button onclick="ResCarouselCustom()" class="btn btn-default">Submit</button>
+</div>
+
+<div class="container p8">
+<div class="col-xs-12 col-sm-12 col-lg-12 shad p0">
+<div class="col-xs-12 col-sm-12 col-lg-12 EiProdH" id="customRes">
+<h4></h4>
+</div>
+</div>
+</div>-->
  
     <footer id="meuFooter" class="footer-distributed">
         <div class="footer-left">
@@ -722,7 +1285,6 @@
             </div>
         </div>
     </footer>
-
 <script>
 //ResCarouselCustom();
 var pageRefresh = true;

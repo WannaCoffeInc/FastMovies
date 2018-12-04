@@ -1,3 +1,4 @@
+
 /*Destaques grid*/
 
 .grid_container {
@@ -6,7 +7,7 @@
   grid-template-areas: "poster_destaque trailer_destaque";
   grid-template-columns: 25% 4fr;
   grid-template-rows: 100%;
-  margin: 20px;
+  margin: 0px;
 }
 
 .grid_container > div {
@@ -77,6 +78,28 @@
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+/*divCartaz*/
+
+.divCartaz{ 
+    display: -webkit-flex; /* Safari */
+    -webkit-align-items: center; /* Safari 7.0+ */
+    display: flex;
+    align-items: center center;
+    background-color: rgba(255,255,255,.4); 
+    margin-bottom: 10px; 
+    width: 100%; 
+    height: 90px;
+    color: rgb(255,255,255,.75);
+    font-size: 15pt;
+
+    font-family: 'Trirong', serif;
+    background: rgb(39,0,65);
+    background: linear-gradient(90deg, 
+            rgba(39,0,65,0.9766281512605042) 0%, 
+            rgba(93,6,150,0.7693452380952381) 50%, 
+            rgba(255,121,0,0.7049194677871149) 100%);
 }
 
 /*resCarousel Css*/
@@ -358,7 +381,8 @@ a.trailer{
 
 .nav{
 /*    background-color: rgba(51,0,51,.8);
-*/    position: absolute;
+*/  
+    position: absolute;
     display: block;
     margin: auto;
     width: 595px;
@@ -368,11 +392,17 @@ a.trailer{
     left: 2.5%;
     right: 2.5%;
     transform: (-2.5%, -2.5%);
+    border: none;
 }
 
 .nav > li{
     border: 1px solid #888;
+    border-radius: .4em;
     color: white;
+}
+
+.nav>li>a{
+    transition: .5s ease;
 }
 
 .hour{
@@ -380,15 +410,25 @@ a.trailer{
 }
 
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
-    background-color: rgba(51,0,51,1);
+    border-radius: .4em;
+    background: transparent;
+    width: 100%;
+    background: rgb(21,0,56);
+    background: linear-gradient(180deg, rgba(21,0,56,1) 0%, rgba(52,22,94,1) 100%);
+/*    background: rgba(1,1,1,.8);*/
 }
 
 .nav-tabs>li>a:hover{
-    background-color: rgba(51,0,51,1);
+    opacity: 1;
+    border-radius: .4em;
+    width: 100%;
+    background: rgb(21,0,56);
+    background: linear-gradient(180deg, rgba(21,0,56,1) 0%, rgba(52,22,94,1) 100%);
+/*  background: rgba(1,1,1,.8); */
 }
 
 .horarios{
-/*    background-color: rgba(51,0,51,.8);*/    
+/*  background-color: rgba(51,0,51,.8);*/    
     position: absolute;
     display: block;
     margin: auto;
@@ -400,7 +440,7 @@ a.trailer{
     transform: (-2.5%, -2.5%);
 }
 
-.label {
+.label{
     color: white;
     padding: 7px;
     font-family: Arial;
@@ -413,6 +453,51 @@ a.trailer{
 .f2D {background-color: #ff9800;} /* Orange */
 .f3D {background-color: #f44336;} /* Red */ 
 .f4K {background-color: #e7e7e7; color: black;} /* Gray */ 
+
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+/**********************************/
+
+/* Extra Things */
+body{background: #eee ;font-family: 'Open Sans', sans-serif;}h3{font-size: 30px; font-weight: 400;text-align: center;margin-top: 50px;}h3 i{color: #444;}
 
 /*tile css*/
 
@@ -440,4 +525,4 @@ a.trailer{
 }
 
 
-/*resCarousel Css End*/
+/*resCarousel Css End
