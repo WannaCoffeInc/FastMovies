@@ -25,13 +25,13 @@
 
 /* The company logo */
 
-.footer-distributed h3{
+.footer-distributed h2{
 	color:  #ffffff;
 	font: normal 36px 'Cookie', cursive;
 	margin: 0;
 }
 
-.footer-distributed h3 span{
+.footer-distributed h2 span{
 	color:  #5383d3;
 }
 
