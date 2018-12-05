@@ -13,4 +13,4 @@ Primeira estrutura de carrossel + colapse
 
 - Implementar:
   1. função js que atualiza a posição do triângulo do collapse que indica qual o poster selecionado. (OK)
-  2. fechamento do colapse ao clicar em um icon "X" no campo superior direito do card de informações.
+  2. fechamento do colapse ao clicar em um icon "X" no campo superior direito do card de informações. (OK0
