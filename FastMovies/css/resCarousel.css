@@ -251,7 +251,7 @@ a.information {
     position: absolute;
     color: white;
     font-family: "open sans", sans-serif;
-    font-size: 1.8vw;
+    font-size: 1.3vw;
     font-weight: bold;
     left: 28px;
     top: 20px;
@@ -266,7 +266,7 @@ a.information {
     font-size: 1vw;
     font-weight: lighter;
     left: 30px;
-    top: 60px;
+    top: 70px;
 }
 
 .itemSinopse p#info_title {
