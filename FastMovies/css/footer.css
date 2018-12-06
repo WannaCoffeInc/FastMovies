@@ -37,7 +37,11 @@
 }
 
 .footer-distributed h2 span{
-	color:  #5383d3;
+	/*color:  #5383d3;*/
+/*    background: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;*/
+    color: yellow;
 }
 
 /* Footer links */

@@ -1,0 +1,118 @@
+/**, *:before, *:after {
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 300;
+   box-sizing: border-box;
+}*/
+
+/*https://stackoverflow.com/questions/9182978/semi-transparent-color-layer-over-background-image  -- overlayer*/
+/*https://codepen.io/m-lanser/pen/eEojar  -- sessão de destaque*/
+
+@import url('https://fonts.googleapis.com/css?family=Lobster|Noticia+Text');
+
+.header {
+   height: 850px;
+   padding: 80px 350px; /* top left*/
+   box-shadow: 0px -16px 43px 21px rgba(0, 0, 0, 0.6);
+   background: url(../img/__5bdb85eee1efc.jpg) no-repeat center center fixed;
+   background-size: cover;
+   overflow:hidden;
+   position: relative;
+
+   .details {
+      padding: 25px 0;
+      width: 45%;
+      
+      .rating {
+         display: inline-block;
+         font-size: 22px;
+         color:#ea292e;
+      }  
+      
+      .year,
+      .seasons{
+         padding: 0 0 0 20px;
+         display: inline-block;
+         font-size: 20px;
+         color: rgba(255,255,255,.9);
+      }
+      
+      .description, a {
+         padding: 25px 0 0 0;
+         font-size: 15px;
+         line-height: 26px;
+         color: rgba(255,255,255,.95);
+      }
+      
+      .button {
+         margin: 25px 20px 0 0;
+      }
+   }
+}
+
+.details{
+   margin-left: 15%;
+   margin-top: 5%;
+}
+
+.titleDestaque{
+   padding-bottom: 40px;
+}
+
+h1 {
+   font-family: 'Lobster', cursive;
+   font-size: 80pt;
+   padding: 60px;
+}
+
+h2 {
+   font-family: 'Noticia Text', serif;
+   font-size: 72pt;
+}
+
+a:hover{
+   color: yellow;
+}
+
+.overlayDestaque {
+    background-color: rgba(0, 0, 1, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.button {
+   display: inline-block;
+   color: rgba(255,255,255,.9);
+   text-decoration: none;
+   text-transform: uppercase;
+   font-weight: 400;
+   padding: 13px 35px;
+   border-radius: 7px;
+   
+   &.red {
+      background: rgba(230, 45, 53, 0.5);
+      
+      &:hover {
+         background: rgba(230, 45, 53, 0.75);;
+      }
+      
+      &:active {
+         background: rgba(230, 45, 53, 0.9);;
+      }
+      
+   }   
+   
+   &.plain {
+      background: rgba(255,255,255,.15);
+      
+      &:hover {
+         background: rgba(255,255,255,.3);
+      }   
+      
+      &:active {
+         background: rgba(255,255,255,.45);
+      }
+   }
+}
