@@ -1,5 +1,10 @@
 .footer-distributed{
-	background-color: #292c2f;
+    background-color: rgba(255, 255, 255, .4);
+    background: rgb(39, 0, 65);
+    background: linear-gradient(90deg,
+        rgba(39, 0, 65, 0.9766281512605042) 0%,
+        rgba(93, 6, 150, 0.7693452380952381) 50%,
+        rgba(255, 121, 0, 0.7049194677871149) 100%);
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	width: 100%;
@@ -25,13 +30,13 @@
 
 /* The company logo */
 
-.footer-distributed h3{
+.footer-distributed h2{
 	color:  #ffffff;
 	font: normal 36px 'Cookie', cursive;
 	margin: 0;
 }
 
-.footer-distributed h3 span{
+.footer-distributed h2 span{
 	color:  #5383d3;
 }
 
